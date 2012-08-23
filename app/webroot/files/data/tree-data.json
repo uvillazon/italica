@@ -1,0 +1,30 @@
+{ 
+text: '.',
+children: [{
+    text:'Prueba',
+    expanded: false,
+	children: [{
+    text:'Prueba Tab',
+    expanded: false,
+    children:[{	
+        text:'Nuevo Tab',
+        id:'prueba',
+       // id:'/libs/ext41/examples/grid/paging.html',	
+        leaf:true
+		}]
+    }]
+},{
+    text:'Prueba2',
+    expanded: false,
+	children: [{
+    text:'Prueba Tab2',
+    expanded: false,
+    children:[{	
+        text:'Nuevo Tab2',
+        id:'prueba2',
+		
+        leaf:true
+		}]
+    }]
+}]
+}
