@@ -37,7 +37,7 @@
 </style>
 
 </head>
-    <body>
+    <body background="<?php echo $html->url('/app/webroot', true); ?>/img/fondoTrans.png">
         <div id="txtAPP">
             <?php  echo $content_for_layout; ?>
         </div>

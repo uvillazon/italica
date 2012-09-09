@@ -25,7 +25,7 @@ class UsuariosController extends AppController {
     }
     //funcion para obtener los usuarios
     function getusers() {
-        Configure::write('debug', '0');
+       Configure::write('debug', '0');
         //$consulta=$this->Usuario->find('all');
         if($_REQUEST['start']!='')
             $start=$_REQUEST['start'];
@@ -36,10 +36,12 @@ class UsuariosController extends AppController {
         else
             $limit=10000;
 
-        $conquery = "SELECT u.*,r.rol_nombre
+        $conquery = "SELECT p.*,r.rol_nombre,u.*,s.sucursal_nombre,s.sucursal_id
                     FROM usuarios u
+                    INNER JOIN personas p ON p.persona_id=u.persona_id
                     INNER JOIN rols r ON r.rol_id=u.rol_id
-                    ORDER BY u.usuario_nombres
+                    INNER JOIN sucursals s ON s.sucursal_id=u.sucursal_id
+                    ORDER BY p.persona_nombres
                     LIMIT $limit OFFSET $start
                 ";
         $consulta = $this->Usuario->query($conquery);
@@ -74,32 +76,30 @@ class UsuariosController extends AppController {
     //funcion para guardar los datos del usuario
     function guardar_usuario() {
         Configure::write('debug', '0');
+        $this->loadModel('Persona');
         $datosSesion=$this->tieneSesion();
         if($datosSesion!=null) {// verificamos la sesion si esta activa
             
             if ($this->data) {
                 //echo print_r($this->data);exit;
                 $this->data['Usuario']['password']=md5( $this->data['Usuario']['password']);
-
                 if(!isset($this->data['Usuario']['activo']))
                     $this->data['Usuario']['activo']=false;
-
-
-                if($this->Usuario->save($this->data)) {
-                    $this->log('Datos almacenados en la tabla Usuarios, Usuario->'.$datosSesion['login'], LOG_DEBUG);
-                    if($this->Usuario->getInsertId()!='')
-                        $user_id=$this->Usuario->getInsertId();
+                if($this->Persona->save($this->data)) {
+                     if($this->Persona->getInsertId()!='')
+                        $user_id=$this->Persona->getInsertId();
                     else
-                        $user_id=$this->data['Usuario']['usuario_id'];
+                        $user_id=$this->data['Persona']['persona_id'];                        
+                    $this->data['Usuario']['persona_id']=$user_id;
+                    if($this->Usuario->save($this->data)){
+                       $this->log('Datos almacenados en la tabla Personas-Usuarios, Usuario->'.$datosSesion['Usuario']['login'], LOG_DEBUG);
                     $info = array('success' => true,'msg'=> $user_id);
+                    }                   
                 }else {
-                    $this->log('no se pudo almacenar los datos en la tabla Usuarios, Usuario->'.$datosSesion['login'], LOG_DEBUG);
+                    $this->log('no se pudo almacenar los datos en la tabla Usuarios, Usuario->'.$datosSesion['Usuario']['login'], LOG_DEBUG);
                     $info = array('success' => true,'msg'=> 'No se pudo almacenar los datos');
                 }
-
             }
-
-
         }else {
             $this->log('Error,no tiene sesion Modificando o creando  usuarios, Usuario->'.$this->getRealIP());
             $info = array('success' => false,'msg'=> 'Error, no tiene una sesion activa');
@@ -111,14 +111,21 @@ class UsuariosController extends AppController {
     //funcion para eliminar usuario
     function eliminar_usuario() {
         Configure::write('debug', '0');
-        $info = array('success' => true);
+         $this->loadModel('Persona');
+       
         if($_REQUEST['usuario_id']) {
-            $id=$_REQUEST['usuario_id'];
+            $usuario_id=$_REQUEST['usuario_id'];
+             $persona_id=$_REQUEST['persona_id'];
 
-            if ($this->Usuario->delete($id)) {
-                $info = array('success' => true,'msg'=>'El registro seleccionado fue eliminado correctamente');
+            if ($this->Usuario->delete($usuario_id)) {
+                if($this->Persona->delete($persona_id)) {
+                     $info = array('success' => true,'msg'=>'El registro seleccionado fue eliminado correctamente');
+                }else{
+                   $info = array('success' => false,'msg'=>'No se pudo eliminar el registro seleccionado (Persona)');
+                }
+               
             }else {
-                $info = array('success' => false,'msg'=>'No se pudo eliminar el registro seleccionado');
+                $info = array('success' => false,'msg'=>'No se pudo eliminar el registro seleccionado (Usuario)');
             }
         }
         $this->set('info',$info);
