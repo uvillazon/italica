@@ -38,6 +38,7 @@ class AppController extends Controller {
         if ($datos!=null) {
 
         }else {
+            
             $this->redirect("../../italica/sistemas/loginf", null, true);
         }
         return $datos;

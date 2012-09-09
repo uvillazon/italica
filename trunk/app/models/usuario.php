@@ -5,8 +5,13 @@ class Usuario extends AppModel {
     var $belongsTo = array('Rol' => array(
                             'className' => 'Rol',
                             'foreignKey' => 'rol_id'
+            ),
+            'Persona' => array(
+                            'className' => 'Persona',
+                            'foreignKey' => 'persona_id'
             )
     );
+   
 
 
 }

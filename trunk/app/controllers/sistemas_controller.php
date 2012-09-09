@@ -7,8 +7,10 @@ class SistemasController extends AppController {
 
     function test() {
         $this->layout = 'ajax';
+          $this->loadModel('Persona');
+           $this->loadModel('Usuario');
         echo "<pre>";
-        echo print_r($this->Sistema->find('all'));
+        echo print_r($this->Usuario->find('all'));
         echo "</pre>";
     }
     //formulario para la autenticacion
@@ -22,6 +24,7 @@ class SistemasController extends AppController {
         $this->layout = 'ajax';
         $this->loadModel('Usuario');
         $this->loadModel('Ingreso');
+      
         //$info = array('success' => false, 'msg' => 'por defecto');
         if (!empty($this->data)) {
             $user = $this->Usuario->find(array("Usuario.login" => $this->data ['Sistema'] ['login']));
@@ -46,7 +49,7 @@ class SistemasController extends AppController {
                         $user['Usuario']['ingreso_id'] = $ingreso['Ingreso']['ingreso_id'];
                     }
 
-                    if ($this->Session->write('Usuario', $user ['Usuario'])) {
+                    if ($this->Session->write('Usuario', $user)) {
                         $info = array('success' => true);
                         $this->log('Ingreso, Usuario->' . $user['Usuario'] ['login'], LOG_DEBUG);
                     } else {
@@ -80,7 +83,7 @@ class SistemasController extends AppController {
                     $this->log('Datos almacenados en la tabla Ingreso, Usuario->' . $this->data ['Usuario'] ['login'], LOG_DEBUG);
                 }
 
-                $info = array('success' => false, 'msg' => 'Contrasenia es incorrecta');
+                $info = array('success' => false, 'msg' => 'Contrase&ntilde;a es incorrecta');
                 $this->log('Ingreso->Contrasenia incorrecta, Usuario->' . $this->data ['Usuario'] ['login']);
             }
         }
@@ -110,9 +113,9 @@ class SistemasController extends AppController {
     function principal() {
         Configure::write('debug', '0');
         $datos=$this->tieneSesion();
-     // echo print_r($datos);exit;
-        $nombres=$datos['usuario_nombres'].' '.$datos['usuario_apellido1'].' '.$datos['usuario_apellido2'];
-        $this->set('nombres',strtoupper($nombres));
+    // echo print_r($datos['Persona']['persona_nombres']);exit;
+        $nombres=$datos['Persona']['persona_nombres'].' '.$datos['Persona']['persona_apellido1'].' '.$datos['Persona']['persona_apellido2'];
+        $this->set('nombres',strtoupper($nombres));        
         $this->render('vistas/principal');
     }
 
@@ -169,6 +172,14 @@ class SistemasController extends AppController {
         $cadena = Set::extract($consulta, '{n}.0');
         echo '{modulos:' . json_encode($cadena) . '}';
         $this->render('eventos/getmenu');
+    }
+    function principal2(){
+        //Configure::write('debug', '0');
+        $datos=$this->tieneSesion();
+    // echo print_r($datos['Persona']['persona_nombres']);exit;
+        $nombres=$datos['Persona']['persona_nombres'].' '.$datos['Persona']['persona_apellido1'].' '.$datos['Persona']['persona_apellido2'];
+        $this->set('nombres',strtoupper($nombres));
+        $this->render('vistas/principal2');
     }
 
 }

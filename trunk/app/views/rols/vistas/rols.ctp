@@ -837,6 +837,7 @@
                             gridMenu.store.each(function(record){
                                 if (record.raw['opcion_id']==parseInt(action.result.msg)){
                                     gridMenu.getSelectionModel().select(record.index);
+                                    Ext.getCmp("tree-panel").store.load();
                                 }
                             });
                         });

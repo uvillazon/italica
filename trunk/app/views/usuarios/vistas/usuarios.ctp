@@ -9,17 +9,20 @@
             extend: 'Ext.data.Model',
             fields: [
 
+                {name: 'persona_id', type: 'int'},
                 {name: 'usuario_id', type: 'int'},
                 {name: 'rol_id', type: 'int'},
                 {name: 'rol_nombre',type: 'string'},
-                {name: 'usuario_nombres',type: 'string'},
+                 {name: 'sucursal_id',type: 'int'},
+                 {name: 'sucursal_nombre',type: 'string'},
+                {name: 'persona_nombres',type: 'string'},
 
-                {name: 'usuario_nombre1',type: 'string'},
-                {name: 'usuario_apellido1',type: 'string'},
-                {name: 'usuario_apellido2',type: 'string'},
-                {name: 'usuario_fecha_nac',type: 'date'},
-                {name: 'usuario_doci',type: 'int'},
-                {name: 'usuario_dir',type: 'string'},
+                {name: 'persona_apellido1',type: 'string'},
+                {name: 'persona_apellido2',type: 'string'},
+                {name: 'persona_fecha_nac',type: 'date'},
+                {name: 'persona_doci',type: 'int'},
+                 {name: 'persona_exp_doci',type: 'string'},
+                {name: 'persona_dir',type: 'string'},
                 {name: 'login',type: 'string'},
                 {name: 'password',type: 'string'},
                 {name: 'activo',type: 'boolean'}
@@ -63,46 +66,46 @@
             // grid columns
             columns:[Ext.create('Ext.grid.RowNumberer'),{
 
-                    id: 'usuario_id',
+                    id: 'persona_id',
                     text: "Usuario Id",
-                    dataIndex: 'usuario_id',
+                    dataIndex: 'persona_id',
                     width: 50,
 
                     hidden:true,
                     sortable: true
                 },{
                     text: "Nombres",
-                    dataIndex: 'usuario_nombres',
+                    dataIndex: 'persona_nombres',
 
                     width: 100,
 
                     sortable: true
                 },{
                     text: "Apellido Paterno",
-                    dataIndex: 'usuario_apellido1',
+                    dataIndex: 'persona_apellido1',
                     width: 100,
 
                     sortable: true
                 },{
                     text: "Apellido Materno",
-                    dataIndex: 'usuario_apellido2',
+                    dataIndex: 'persona_apellido2',
                     width: 100,
                     sortable: true
                 },{
                     text: "Fecha Nac.",
-                    dataIndex: 'usuario_fecha_nac',
+                    dataIndex: 'persona_fecha_nac',
                     width: 100,
                     renderer : Ext.util.Format.dateRenderer('m/d/Y'),
                     sortable: true
                 },{
                     text: "C.I.",
-                    dataIndex: 'usuario_doci',
+                    dataIndex: 'persona_doci',
                     width: 50,
 
                     sortable: true
                 },{
                     text: "Direcci\u00f3n",
-                    dataIndex: 'usuario_dir',
+                    dataIndex: 'persona_dir',
                     width: 150,
                     //align: 'right',
 
@@ -122,7 +125,11 @@
                     text: "Rol",
                     dataIndex: 'rol_nombre',
                     width: 100,
-
+                    sortable: true
+                },{
+                    text: "Sucursal",
+                    dataIndex: 'sucursal_nombre',
+                    width: 100,
                     sortable: true
                 }],
             dockedItems: [{
@@ -157,7 +164,7 @@
 
             })
         });
-        
+
         store.loadPage(1);
         grid.store.on('beforeload',function(){
             showMask(true,grid,'Cargando....');
@@ -175,8 +182,8 @@
             grid.down('#delete').setDisabled(selections.length === 0);
             grid.down('#edit').setDisabled(selections.length === 0);
             /* if (selections[0]) {
-                formPanel.getForm().loadRecord(selections[0]);
-            }*/
+formPanel.getForm().loadRecord(selections[0]);
+}*/
 
         });
 
@@ -204,6 +211,29 @@
             },
             autoLoad: false
         });
+
+        Ext.define('comboModelSucursal', {
+            extend: 'Ext.data.Model',
+            fields: [
+                {name: 'sucursal_id', type: 'int'},
+                {name: 'sucursal_nombre',  type: 'string'},
+                {name: 'sucursal_dir',  type: 'string'}
+            ]
+        });
+        var storeComboSucursal = new Ext.data.Store({
+            model: 'comboModelSucursal',
+            pageSize:5,
+            proxy: {
+                type: 'ajax',
+                url: '../sucursals/getsucursals',
+                reader: {
+                    type: 'json',
+                    root: 'datos',
+                    totalProperty: 'total'
+                }
+            },
+            autoLoad: false
+        });
         function formPanel(){
             var formPanelUsuario = Ext.widget({
                 xtype: 'form',
@@ -226,39 +256,45 @@
                         id:'data-usuario_nombres',
                         fieldLabel: 'Nombres',
                         allowBlank:false,
-                        name: 'data[Usuario][usuario_nombres]'
+                        name: 'data[Persona][persona_nombres]'
                         // name:'usuario_nombres'
                     },{
                         id:'data-usuario_apellido1',
                         fieldLabel: 'Apellido Paterno',
                         allowBlank:false,
-                        name: 'data[Usuario][usuario_apellido1]'
+                        name: 'data[Persona][persona_apellido1]'
                         // name:'usuario_apellido1'
                     },{
                         id:'data-usuario_apellido2',
                         fieldLabel: 'Apellido Materno',
                         allowBlank:false,
-                        name: 'data[Usuario][usuario_apellido2]'
+                        name: 'data[Persona][persona_apellido2]'
                         //name:'usuario_apellido2'
                     },{
                         id:'data-usuario_fecha_nac',
                         fieldLabel: 'Fecha Nac.',
                         allowBlank:false,
                         xtype: 'datefield',
-                        name: 'data[Usuario][usuario_fecha_nac]'
+                        name: 'data[Persona][persona_fecha_nac]'
                         //name:'usuario_fecha_nac'
                     },{
                         id:'data-usuario_doci',
                         fieldLabel: 'C.I.',
                         allowBlank:false,
-                        name: 'data[Usuario][usuario_doci]',
+                        name: 'data[Persona][persona_doci]',
                         // name:'usuario_fecha_nac',
                         xtype: 'numberfield'
+                    },{
+                        id:'data-persona_exp_doci',
+                        fieldLabel: 'Exp. en',
+                        allowBlank:false,
+                        name: 'data[Persona][persona_exp_doci]'
+                        // name:'usuario_dir'
                     },{
                         id:'data-usuario_dir',
                         fieldLabel: 'Direcci\u00f3n',
                         allowBlank:false,
-                        name: 'data[Usuario][usuario_dir]'
+                        name: 'data[Persona][persona_dir]'
                         // name:'usuario_dir'
                     },{
                         id:'data-login',
@@ -332,6 +368,42 @@
                                     '<div class="desc">{rol_descripcion}</div></div>';
                             }
                         }
+                    },{
+                        xtype:             'combo',
+                        id:'data-sucursal_id',
+                        name:'data[Usuario][sucursal_id]',
+                        fieldLabel:       'Sucursal:',
+                        mode:           'remote',
+                        triggerAction:     'all',
+                        store:storeComboSucursal,
+                        valueField:       'sucursal_id',
+                        displayField:   'sucursal_nombre',
+                        //forceSelection:true,
+                        typeAhead:true,
+                        selectOnFocus: true,
+                        //width: 570,
+                        pageSize:5,
+                        //resizable:true,
+                        emptyText:'Seleccione Sucursal....',
+                        lazyRender:true,
+                        minChars:1,
+                        allowBlank: false,
+                        itemSelector: 'div.search-item',
+                        listConfig: {
+                            loadingText: 'Buscando...',
+                            emptyText: 'No se ha encontrado sucursales.',
+
+                            // Custom rendering template for each item
+                            getInnerTpl: function() {
+                                return '<div class="search-item"><div class="name">{sucursal_nombre}</div>' +
+                                    '<div class="desc">{sucursal_dir}</div></div>';
+                            }
+                        }
+                    }, {////////////////////hidden
+                        xtype:'hidden',
+                        id: 'data-persona_id',
+
+                        name:'data[Persona][persona_id]'
                     }, {////////////////////hidden
                         xtype:'hidden',
                         id: 'data-usuario_id',
@@ -448,15 +520,18 @@
                 }).show();
 
                 Ext.getCmp("data-usuario_id").setValue(selection.data['usuario_id']);
-                Ext.getCmp("data-usuario_nombres").setValue(Ext.String.trim(selection.data['usuario_nombres']));
-                Ext.getCmp("data-usuario_apellido1").setValue(Ext.String.trim(selection.data['usuario_apellido1']));
-                Ext.getCmp("data-usuario_apellido2").setValue(Ext.String.trim(selection.data['usuario_apellido2']));
-                Ext.getCmp("data-usuario_fecha_nac").setValue(selection.data['usuario_fecha_nac']);
-                Ext.getCmp("data-usuario_doci").setValue(selection.data['usuario_doci']);
-                Ext.getCmp("data-usuario_dir").setValue(Ext.String.trim(selection.data['usuario_dir']));
+                 Ext.getCmp("data-persona_id").setValue(selection.data['persona_id']);
+                Ext.getCmp("data-usuario_nombres").setValue(Ext.String.trim(selection.data['persona_nombres']));
+                Ext.getCmp("data-usuario_apellido1").setValue(Ext.String.trim(selection.data['persona_apellido1']));
+                Ext.getCmp("data-usuario_apellido2").setValue(Ext.String.trim(selection.data['persona_apellido2']));
+                Ext.getCmp("data-usuario_fecha_nac").setValue(selection.data['persona_fecha_nac']);
+                Ext.getCmp("data-usuario_doci").setValue(selection.data['persona_doci']);
+                Ext.getCmp("data-usuario_dir").setValue(Ext.String.trim(selection.data['persona_dir']));
                 Ext.getCmp("data-login").setValue(Ext.String.trim(selection.data['login']));
                 Ext.getCmp("data-activo").setValue(selection.data['activo']);
                 Ext.getCmp("data-rol_id").setValue(selection.data['rol_id']);
+                Ext.getCmp("data-persona_exp_doci").setValue(selection.data['persona_exp_doci']);
+                Ext.getCmp("data-sucursal_id").setValue(selection.data['sucursal_id']);
                 // Ext.getCmp("data-rol_id").setRawValue(selection.data['rol_nombre']);
 
             }
@@ -471,7 +546,8 @@
                         Ext.Ajax.request({
                             url: '../usuarios/eliminar_usuario',
                             params: {
-                                usuario_id: selection.data['usuario_id']
+                                usuario_id: selection.data['usuario_id'],
+                                persona_id:selection.data['persona_id']
                             },
                             timeout: 3000,
                             method: 'POST',
@@ -526,7 +602,7 @@
             }
 
         }
-  
+
 
 
     });

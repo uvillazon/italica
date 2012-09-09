@@ -1,31 +1,99 @@
 <script>
     Ext.onReady(function() {
         Ext.QuickTips.init();
-
+        Ext.define('comboModel', {
+            extend: 'Ext.data.Model',
+            fields: [
+                {name: 'sucursal_id', type: 'int'},
+                {name: 'sucursal_nombre',  type: 'string'},
+                {name: 'sucursal_dir',  type: 'string'}
+            ]
+        });
+        var storeCombo = new Ext.data.Store({
+            model: 'comboModel',
+            //pageSize:5,
+            proxy: {
+                type: 'ajax',
+                url: '../sucursals/getsucursals',
+                reader: {
+                    type: 'json',
+                    root: 'datos',
+                    totalProperty: 'total'
+                }
+            },
+            autoLoad: true
+        });
         var loginForm = Ext.widget({
             xtype: 'form',
-            layout: 'form',
-
+            border: false,
+            bodyBorder: false,
+            bodyStyle: "background-image:url('../app/webroot/img/fondo.jpg')",
+            layout: 'absolute',
             id: 'loginForm',
-            frame: true,
 
-            //bodyPadding: '0 0 0',
-            //width: 350,
-            fieldDefaults: {
-                msgTarget: 'side',
-                labelWidth: 75
-            },
             defaultType: 'textfield',
+            width:150,
             items: [{
-                    fieldLabel: 'Usuario',
+                    xtype: 'label',
+                    style: 'color: #FFF; font-weight: bold; font-size: 14px',
+                    text: 'Usuario:',
+                    x: 180,
+                    y: 30
+                },{
+                    style: 'font-size: 20px',
+                    width:180,
+                    x: 180,
+                    y: 48,
                     id:'userLoginForm',
                     name: 'data[Sistema][login]',
-                    allowBlank:false
+                    allowBlank:false,
+                    listeners:{
+                        blur: function (){
+                            if(Ext.getCmp("userLoginForm").getValue()!='super'){
+                                //Ext.getCmp("userLoginForm").
+                            }
+
+                        }
+                    }
                 },{
-                    fieldLabel: 'Contraseña',
+                    xtype: 'label',
+                    style: 'color: #FFF; font-weight: bold; font-size: 14px',
+                    text: 'Contrase\u00f1a:',
+                    x: 180,
+                    y: 80
+                },{
+
+                    style: 'color: #FFF; font-weight: bold; font-size: 14px',
                     id:'passLoginForm',
+                    style: 'font-size: 20px',
+                    width:180,
+                    //width: 80,
+                    x: 180,
+                    y: 98,
                     inputType: 'password',
+
                     name: 'data[Sistema][pass]'
+                },{
+                    xtype: 'label',
+                    style: 'color: #FFF; font-weight: bold; font-size: 14px',
+                    text: 'Sucursal:',
+                    x: 180,
+                    y: 130
+                },{
+                    xtype:             'combo',
+                    id:'userSucursal',
+                    style: 'font-size: 20px',
+                    width:180,
+                    x: 180,
+                    y: 148,
+                    name:'data[Sistema][sucursal_id]',
+                    style: 'color: #FFF; font-weight: bold; font-size: 14px',
+                    mode:           'remote',
+                    store:storeCombo,
+                    valueField:       'sucursal_id',
+                    displayField:   'sucursal_nombre',
+                    emptyText:'Seleccione Sucursal....',
+                    allowBlank: false
                 }],
 
             buttons:
@@ -53,14 +121,20 @@
         {
             title: 'Ingreso al sistema',
             iconCls:'key',
-            width: 300,
+            width: 400,
             closable:false,
-            height: 160,
+            height: 310,
             autoScroll: false,
             layout: 'fit',
             plain:true,
+            border:false,
             bodyStyle:'padding:5px;',
             buttonAlign:'center',
+            bbar: ['->',{
+                    xtype: 'tbtext',
+                    
+                    text:'<b>ITALICA  ©   '+ Ext.Date.format(new Date(),'Y')+'</b>'
+                }],
             //modal: true,
             items: [loginForm]
         }
