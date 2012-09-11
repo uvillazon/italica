@@ -78,8 +78,8 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'postgres',
-		'password' => '123qwe',
-		'database' => 'doptima_italica',
+		'password' => 'postgres',
+		'database' => 'doptimac_italica',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);

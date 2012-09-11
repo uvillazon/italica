@@ -144,7 +144,7 @@ class SistemasController extends AppController {
                 $cons_rol="";
 
             $sql = "SELECT op.opcion_id as id, op.opcion_nombre as text, op.leaf as leaf, op.opcion_padre as parentId,
-                    '../../libs/icons/' || op.opcion_icon || '.png' as icon, op.opcion_url as url, op.opcion_icon as icontab
+                    '../app/webroot/img/icons/' || op.opcion_icon || '.png' as icon, op.opcion_url as url, op.opcion_icon as icontab
                     FROM sistemas sis
                     INNER JOIN opciones op ON op.sistema_id=sis.sistema_id
                     $cons_rol
@@ -156,7 +156,7 @@ class SistemasController extends AppController {
 
 
                 $sql="SELECT op.opcion_id as id, op.opcion_nombre as text, op.leaf as leaf, op.opcion_padre as parentId,
-                            '../../libs/icons/' || op.opcion_icon || '.png' as icon, op.opcion_url as url, op.opcion_icon as icontab
+                            '../app/webroot/img/icons/' || op.opcion_icon || '.png' as icon, op.opcion_url as url, op.opcion_icon as icontab
                             
                                 FROM opciones op
                         $cons_rol
