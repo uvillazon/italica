@@ -1,7 +1,7 @@
 Ext.define("App.Conf.Categorias.Vistas.ComboCategorias", {
     extend: "Ext.form.ComboBox",
     alias: "widget.ComboCategorias",
-    name: 'data[Articulo][categoria_id]',
+    name: 'data[Categoria][categoria_id]',
     fieldLabel: 'Categoria',
     valueField:'categoria_id',
     displayField:'categoria_nombre',

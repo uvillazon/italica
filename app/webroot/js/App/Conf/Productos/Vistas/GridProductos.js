@@ -6,6 +6,9 @@ Ext.define("App.Conf.Productos.Vistas.GridProductos",{
     miVentana:'',
     store: Ext.create("App.Conf.Productos.Stores.StoreProductos"),
     loadMask: true,
+
+    minWidth:400,
+    minHeight:400,
     quitarPermisoW:false,// quitar permisos para modificar
     quitarPermisoC:false,//quitar permisos para crear
     quitarPermisoD:false,// quitar permisos para borrar
@@ -42,10 +45,6 @@ Ext.define("App.Conf.Productos.Vistas.GridProductos",{
             width:20,
             hidden:true
         },{
-            header:"Producto",
-            dataIndex:"producto_nombre",
-            width:150
-        },{
             header:"C\u00f3digo",
             dataIndex:"producto_codigo",
             flex:1
@@ -53,6 +52,10 @@ Ext.define("App.Conf.Productos.Vistas.GridProductos",{
             header:"C\u00f3digo Prov.",
             dataIndex:"producto_codigo_prov",
             flex:1
+        },{
+            header:"Producto",
+            dataIndex:"producto_nombre",
+            width:150
         },{
             header:"Categoria",
             dataIndex:"categoria_nombre",

@@ -5,7 +5,7 @@
 
     Ext.onReady(function() {
         Ext.QuickTips.init();
-       var grid = Ext.create("App.Conf.Productos.Vistas.GridProductos",{
+       var grid = Ext.create("App.Conf.Productos.Vistas.PanelPrincipalProducto",{
             width:'100%',
             height:'100%',
             minHeight:400,
