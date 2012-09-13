@@ -6,6 +6,7 @@ Ext.define("App.Conf.Unidades.Vistas.gridUnidades",{
     miVentana:'',
     store: Ext.create("App.Conf.Unidades.Stores.StoreUnidades"),
     loadMask: true,
+    minHeight:300,
     id:'gridUnidades',
     quitarPermisoW:false,// quitar permisos para modificar
     quitarPermisoC:false,//quitar permisos para crear

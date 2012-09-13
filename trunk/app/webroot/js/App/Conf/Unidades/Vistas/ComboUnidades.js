@@ -4,7 +4,7 @@ Ext.define("App.Conf.Unidades.Vistas.ComboUnidades", {
     name: 'data[Unidad][unidad_id]',
     fieldLabel: 'Unidad',
     valueField:'unidad_id',
-    displayField:'unidad_nombre',
+    displayField:'unidad_sigla',
     typeAhead: true,
     store: Ext.create("App.Conf.Unidades.Stores.StoreUnidades"),
     emptyText:'SELECCIONE UNIDAD....',

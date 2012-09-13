@@ -5,20 +5,19 @@
 
     Ext.onReady(function() {
         Ext.QuickTips.init();
-       var grid = Ext.create("App.Conf.Productos.Vistas.PanelPrincipalProducto",{
-            width:'100%',
-            height:'100%',
+       var panel = Ext.create("App.Conf.Productos.Vistas.PanelPrincipalProducto",{
+           
             minHeight:400,
             quitarPermisoW:<?php echo $permisos["w"]?>,
             quitarPermisoC:<?php echo $permisos["c"]?>,
             quitarPermisoD:<?php echo $permisos["d"]?>
            
         });
-        grid.render('GridProductos');
+        panel.render('PanelProductos');
       
      
 
     });
 
 </script>
-<center><div id="GridProductos"></div></center>
+<div id="PanelProductos"></div>

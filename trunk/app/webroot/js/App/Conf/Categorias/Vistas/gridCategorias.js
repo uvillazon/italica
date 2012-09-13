@@ -7,6 +7,8 @@ Ext.define("App.Conf.Categorias.Vistas.gridCategorias",{
     store: Ext.create("App.Conf.Categorias.Stores.StoreCategorias"),
     loadMask: true,
     id:'gridCategorias',
+    itemId:'prueba',
+    minHeight:300,
     quitarPermisoW:false,// quitar permisos para modificar
     quitarPermisoC:false,//quitar permisos para crear
     quitarPermisoD:false,// quitar permisos para borrar
@@ -93,6 +95,7 @@ Ext.define("App.Conf.Categorias.Vistas.gridCategorias",{
     },
 
     nuevo: function(){
+        alert(this.getComponent('name').getId());
         var grid= Ext.getCmp("gridCategorias");
         var Form=Ext.create("App.Conf.Categorias.Vistas.FormNuevaCategoria",{
 

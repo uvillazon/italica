@@ -6,6 +6,7 @@ Ext.define("App.Conf.Marcas.Vistas.gridMarcas",{
     miVentana:'',
     store: Ext.create("App.Conf.Marcas.Stores.StoreMarcas"),
     loadMask: true,
+    minHeight:300,
     id:'gridMarcas',
     quitarPermisoW:false,// quitar permisos para modificar
     quitarPermisoC:false,//quitar permisos para crear

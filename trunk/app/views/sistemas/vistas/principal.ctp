@@ -110,7 +110,7 @@
             id: 'content-panel',
             region: 'center', // this is what makes this panel into a region
             // within the containing layout
-            layout: 'card',
+            layout: 'fit',
             margins: '0 0 0 0',
             resizeTabs: true,
              bodyStyle: "background-image:url('../app/webroot/img/fondoTrans.png')",
@@ -129,6 +129,7 @@
             if (open==null){
                 tabs.add({
                     id:url,
+                    layout:'fit',
                     closable: true,
                     bodyStyle: "background-image:url('../app/webroot/img/fondoTrans.png')",
                     //html: '<img src="<?php echo $html->url('/app/webroot', true); ?>/img/fondoTrans.png" width="100%" height="100%">',

@@ -5,7 +5,7 @@ Ext.define("App.Conf.Productos.Modelos.ModeloStoreProductos",{
         {name:"categoria_id",type:"int"},
         {name:"marca_id",type:"int"},
         {name:"unidad_id",type:"int"},
-        {name:"producto_ubicacion",type:"string"},
+        {name:"kardex_ubicacion_producto",type:"string"},
         {name:"producto_cantidad_minima",type:"float"},
         {name:"producto_precio",type:"float"},
         {name:"producto_codigo_barra",type:"float"},

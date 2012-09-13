@@ -3,21 +3,15 @@ Ext.define("App.Conf.Productos.Vistas.PanelProductoGrid", {
     alias: "widget.PanelProductoGrid",
    
     title: '',
-    layout: 'form',
+    layout: 'fit',
     //bodyPadding: '10 10 10',
     border:0,
     
-    width:800,
+    width:600,
+    
     height:530,
     initComponent: function() {
-       
-        var grid = Ext.create("App.Conf.Productos.Vistas.GridProductos",{
-            width:'100%',
-            height:530
-        });
-        this.items=[grid];
-        
-    
         this.callParent(arguments);
     }
+    
 });
