@@ -113,19 +113,7 @@ class ArticulosController extends AppController {
         $this->set('info',$info);
         $this->render('respuestas/guardar_articulo');
     }
-    function eliminar_categoria(){
-        Configure::write('debug', '0');
-        if($_REQUEST['id']) {
-            $id=$_REQUEST['id'];
-            if ($this->Articulo->delete($id)) {
-                $info = array('success' => true,'msg'=>'El registro seleccionado fue eliminado correctamente');
-            }else {
-                $info = array('success' => false,'msg'=>'No se pudo eliminar el registro seleccionado');
-            }
-        }
-        $this->set('info',$info);
-        $this->render('respuestas/eliminar_articulo');
-    }
+    
 
 
 }
