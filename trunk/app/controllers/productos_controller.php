@@ -15,7 +15,7 @@ class ProductosController extends AppController {
         //Configure::write('debug', '0');// deshabilitamos el debug de cakephp
         $this->render('vistas/detalle');
     }
-     function producto(){
+    function producto(){
         Configure::write('debug', '0');// deshabilitamos el debug de cakephp
         $rols = new RolsController();
         $datosSesion=$this->tieneSesion();
@@ -26,7 +26,7 @@ class ProductosController extends AppController {
         $this->render('vistas/producto');
     }
 
-     //funcion que retorna todas las unidades registradas en BD
+    //funcion que retorna todas las unidades registradas en BD
 
     function get_productos(){
         Configure::write('debug', '0');
@@ -40,11 +40,12 @@ class ProductosController extends AppController {
         else
         $limit=10000;
 
-        $conquery = "SELECT *
+        $conquery = "SELECT p.*,c.*,u.*,m.*,k.kardex_id,k.kardex_saldo_cantidad
                     FROM productos p
                     INNER JOIN categorias c ON c.categoria_id=p.categoria_id
                     INNER JOIN marcas m ON m.marca_id=p.marca_id
                     INNER JOIN unidads u ON u.unidad_id=p.unidad_id
+                    LEFT JOIN kardexes k ON k.producto_id=p.producto_id AND k.kardex_inicial=true
                     ORDER BY p.producto_nombre
                     LIMIT $limit OFFSET $start
                 ";
@@ -58,7 +59,7 @@ class ProductosController extends AppController {
         $this->render('respuestas/get_productos');
     }
 
-     function guardar_producto(){
+    function guardar_producto(){
         Configure::write('debug', '0');
         $this->layout = 'ajax';
         //$info = array('success' => true,'msg'=> 'Se almacen&oacute; el nuevo registro correctamente');
@@ -67,7 +68,7 @@ class ProductosController extends AppController {
         $datosSesion=$this->Session->read('Usuario');
         if($datosSesion){
             if($this->data) {
-               // echo print_r($this->data);exit;
+                // echo print_r($this->data);exit;
                 sleep(1);
                 if($_FILES['photo-path']['name']!=''){//si existe archivo para subir
                     $nombre_archivo = substr(md5(uniqid(rand())),0,8).$_FILES['photo-path']['name'];
@@ -97,16 +98,21 @@ class ProductosController extends AppController {
                     if($this->Producto->Save($this->data)) {
                         if($this->Producto->getInsertId()!=''){
                             $id=$this->Producto->getInsertId();
-                            //$this->data['Kardex']['kardex_saldo_valor']=$this->data['Kardex']['kardex_saldo_cantidad']*$this->data['Producto']['producto_precio'];
-
                             $msg="Se almacen&oacute; el nuevo registro correctamente";
                         }
                         else{
                             $id=$this->data['Producto']['producto_id'];
                             $msg="El registro fu&eacute; modificado correctamente";
                         }
-                        $info = array('success' => true,'msg'=>$msg,'id'=>$id );
-                        $this->log("Producto $id almacenada en, Productos por->".$datosSesion['Usuario']['login'], LOG_DEBUG);
+                        $this->loadModel('Kardex');
+                        $this->data['Kardex']['kardex_saldo_valor']=$this->data['Kardex']['kardex_saldo_cantidad']*$this->data['Producto']['producto_precio'];
+                        $this->data['Kardex']['producto_id']=$id;
+                        $this->data['Kardex']['kardex_inicial']=true;
+                        $this->data['Kardex']['sucursal_id']=1;
+                        if($this->Kardex->save($this->data)){
+                            $info = array('success' => true,'msg'=>$msg,'id'=>$id );
+                            $this->log("Producto $id almacenada en, Productos por->".$datosSesion['Usuario']['login'], LOG_DEBUG);
+                        }
                     }else {
                         $info = array('success' => false,'msg'=> "No se pudo almacenar. Intentelo nuevamente");
                         $this->log("no se pudo almacenar el producto nuevo en, Productos por->".$datosSesion['Usuario']['login']);
@@ -128,12 +134,17 @@ class ProductosController extends AppController {
     function eliminar_producto(){
         Configure::write('debug', '0');
         if($_REQUEST['id']) {
+            $this->loadModel('Kardex');
             $id=$_REQUEST['id'];
-            if ($this->Producto->delete($id)) {
-                $info = array('success' => true,'msg'=>'El registro seleccionado fue eliminado correctamente');
-            }else {
-                $info = array('success' => false,'msg'=>'No se pudo eliminar el registro seleccionado');
+            $kardex_id=$_REQUEST['kardex_id'];
+            if ($this->Kardex->delete($kardex_id)) {
+                if ($this->Producto->delete($id)) {
+                    $info = array('success' => true,'msg'=>'El registro seleccionado fue eliminado correctamente');
+                }else {
+                    $info = array('success' => false,'msg'=>'No se pudo eliminar el registro seleccionado');
+                }
             }
+
         }
         $this->set('info',$info);
         $this->render('respuestas/eliminar_producto');

@@ -183,9 +183,13 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
         },
         
         {
-            xtype:'hidden',
+            //xtype:'hidden',
             itemId:'id',
             name: 'data[Producto][producto_id]'
+        }, {
+            //xtype:'hidden',
+            itemId:'kardex_id',
+            name: 'data[Kardex][kardex_id]'
         }
         ];
         this.tbar=[{
@@ -267,8 +271,9 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
         form.down('#precio').setValue(selection.data['producto_precio']);
         form.down('#costo').setValue(selection.data['producto_costo']);
         form.down('#stockminimo').setValue(selection.data['producto_cantidad_minima']);
-        form.down('#stockinicial').setValue(selection.data['producto_cantidad_inicial']);
+        form.down('#stockinicial').setValue(selection.data['kardex_saldo_cantidad']);
         form.down('#id').setValue(selection.data['producto_id']);
+         form.down('#kardex_id').setValue(selection.data['kardex_id']);
         form.down('#imagen').setSrc(selection.data['producto_imagen']);
     },
     AddCategoria:function(){
@@ -370,14 +375,15 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
     },
     eliminarSeleccionado:function(form,grid){
         var id=form.down('#id').getValue();
+         var kardex_id=form.down('#kardex_id').getValue();
         Ext.MessageBox.confirm('Confirmar ', 'Desea eliminar el registro seleccionado ?.\n'+
             ' El registro se eliminar\u00e1 definitivamente sin opci\u00f3n a recuperarlo', function(btn){
                 if(btn=='yes'){
                     Ext.Ajax.request({
                         url: '../productos/eliminar_producto',
                         params: {
-                            id: id
-
+                            id: id,
+                            kardex_id:kardex_id
                         },
                         timeout: 3000,
                         method: 'POST',
@@ -386,7 +392,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
                             if (info.success){
                                 grid.recargarStoreSelP(grid);
                             }
-                            Ext.example.msg('Eliminar Articulo', info.msg);
+                            Ext.example.msg('Eliminar Producto', info.msg);
                         },
 
                         failure: function(result) {

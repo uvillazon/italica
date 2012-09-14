@@ -586,3 +586,39 @@ DETAIL:  La llave (opcion_id)=(1007) todavía es referida desde la tabla «rols_
 2012-09-12 13:01:40 Warning: Warning (2): unlink(C:\xampp\htdocs\italica\app\tmp\cache\models\cake_model_default_doptima_italica_list) [<a href='http://php.net/function.unlink'>function.unlink</a>]: Permission denied in [C:\xampp\htdocs\italica\cake\libs\file.php, line 298]
 2012-09-12 13:01:40 Warning: Warning (2): unlink(C:\xampp\htdocs\italica\app\tmp\cache\models\cake_model_default_opciones) [<a href='http://php.net/function.unlink'>function.unlink</a>]: Permission denied in [C:\xampp\htdocs\italica\cake\libs\file.php, line 298]
 2012-09-12 13:01:40 Warning: Warning (2): unlink(C:\xampp\htdocs\italica\app\tmp\cache\models\cake_model_default_traslados) [<a href='http://php.net/function.unlink'>function.unlink</a>]: Permission denied in [C:\xampp\htdocs\italica\cake\libs\file.php, line 298]
+2012-09-13 22:20:25 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  insert or update on table &quot;log_kardex&quot; violates foreign key constraint &quot;fk_log_kard_relations_kardexs&quot;
+DETAIL:  Key (kardex_id)=(8) is not present in table &quot;kardexes&quot;.
+CONTEXT:  SQL statement &quot;INSERT INTO public.log_kardex(kardex_id, log_kardex_saldo_cantidad, log_kardex_saldo_valor, log_kardex_fecha) VALUES ( $1 ,  $2 ,  $3 , now())&quot;
+PL/pgSQL function &quot;actualizar_log_lardex&quot; line 3 at SQL statement in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-13 22:22:32 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  insert or update on table &quot;log_kardex&quot; violates foreign key constraint &quot;fk_log_kard_relations_kardexs&quot;
+DETAIL:  Key (kardex_id)=(9) is not present in table &quot;kardexes&quot;.
+CONTEXT:  SQL statement &quot;INSERT INTO public.log_kardex(kardex_id, log_kardex_saldo_cantidad, log_kardex_saldo_valor, log_kardex_fecha) VALUES ( $1 ,  $2 ,  $3 , now())&quot;
+PL/pgSQL function &quot;actualizar_log_lardex&quot; line 3 at SQL statement in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-13 22:23:20 Warning: Warning (2): unlink(C:\xampp\htdocs\italica\app\tmp\cache\models\cake_model_default_ventas) [<a href='http://php.net/function.unlink'>function.unlink</a>]: Permission denied in [C:\xampp\htdocs\italica\cake\libs\file.php, line 298]
+2012-09-13 22:24:17 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  insert or update on table &quot;log_kardex&quot; violates foreign key constraint &quot;fk_log_kard_relations_kardexs&quot;
+DETAIL:  Key (kardex_id)=(10) is not present in table &quot;kardexes&quot;.
+CONTEXT:  SQL statement &quot;INSERT INTO public.log_kardex(kardex_id, log_kardex_saldo_cantidad, log_kardex_saldo_valor, log_kardex_fecha) VALUES ( $1 ,  $2 ,  $3 , now())&quot;
+PL/pgSQL function &quot;actualizar_log_lardex&quot; line 3 at SQL statement in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-13 22:24:17 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> ERROR:  insert or update on table "log_kardex" violates foreign key constraint "fk_log_kard_relations_kardexs"
+DETAIL:  Key (kardex_id)=(10) is not present in table "kardexes".
+CONTEXT:  SQL statement "INSERT INTO public.log_kardex(kardex_id, log_kardex_saldo_cantidad, log_kardex_saldo_valor, log_kardex_fecha) VALUES ( $1 ,  $2 ,  $3 , now())"
+PL/pgSQL function "actualizar_log_lardex" line 3 at SQL statement</span> in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo_source.php, line 684]
+2012-09-13 22:24:36 Error: Error en el envio de datos, Productos por->super               
+2012-09-13 22:25:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  insert or update on table &quot;log_kardex&quot; violates foreign key constraint &quot;fk_log_kard_relations_kardexs&quot;
+DETAIL:  Key (kardex_id)=(11) is not present in table &quot;kardexes&quot;.
+CONTEXT:  SQL statement &quot;INSERT INTO public.log_kardex(kardex_id, log_kardex_saldo_cantidad, log_kardex_saldo_valor, log_kardex_fecha) VALUES ( $1 ,  $2 ,  $3 , now())&quot;
+PL/pgSQL function &quot;actualizar_log_lardex&quot; line 3 at SQL statement in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-13 22:25:09 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> ERROR:  insert or update on table "log_kardex" violates foreign key constraint "fk_log_kard_relations_kardexs"
+DETAIL:  Key (kardex_id)=(11) is not present in table "kardexes".
+CONTEXT:  SQL statement "INSERT INTO public.log_kardex(kardex_id, log_kardex_saldo_cantidad, log_kardex_saldo_valor, log_kardex_fecha) VALUES ( $1 ,  $2 ,  $3 , now())"
+PL/pgSQL function "actualizar_log_lardex" line 3 at SQL statement</span> in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo_source.php, line 684]
+2012-09-13 22:26:40 Error: Error en el envio de datos, Productos por->super               
+2012-09-13 22:27:02 Error: Error en el envio de datos, Productos por->super               
+2012-09-14 13:07:55 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-14 13:07:55 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-14 13:07:55 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-14 13:21:15 Error: Error en el envio de datos, Productos por->super               
+2012-09-14 15:13:35 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  update or delete on table &quot;productos&quot; violates foreign key constraint &quot;fk_kardexs_relations_producto&quot; on table &quot;kardexes&quot;
+DETAIL:  Key (producto_id)=(8) is still referenced from table &quot;kardexes&quot;. in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-14 15:20:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  update or delete on table &quot;productos&quot; violates foreign key constraint &quot;fk_kardexs_relations_producto&quot; on table &quot;kardexes&quot;
+DETAIL:  Key (producto_id)=(6) is still referenced from table &quot;kardexes&quot;. in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]

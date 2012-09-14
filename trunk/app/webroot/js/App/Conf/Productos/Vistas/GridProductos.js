@@ -21,6 +21,11 @@ Ext.define("App.Conf.Productos.Vistas.GridProductos",{
             dataIndex:"producto_id",
             flex:1,
             hidden:true
+        },{
+            header:"Kardex Id",
+            dataIndex:"kardex_id",
+            flex:1,
+            hidden:true
         }, {
             header:"Producto Id",
             dataIndex:"categoria_id",
