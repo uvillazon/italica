@@ -1816,3 +1816,6 @@
 2012-09-14 15:20:16 Debug: Producto 6 almacenada en, Productos por->super               
 2012-09-14 15:22:08 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
 2012-09-14 15:22:08 Debug: Notice (8): Undefined property: ProductosController::$Articulo in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-09-14 16:14:55 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 141]
+2012-09-14 16:14:59 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 141]
+2012-09-14 16:15:04 Debug: Notice (8): Undefined property: ProductosController::$Articulo in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
