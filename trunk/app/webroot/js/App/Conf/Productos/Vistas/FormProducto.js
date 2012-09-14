@@ -183,11 +183,11 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
         },
         
         {
-            //xtype:'hidden',
+            xtype:'hidden',
             itemId:'id',
             name: 'data[Producto][producto_id]'
         }, {
-            //xtype:'hidden',
+            xtype:'hidden',
             itemId:'kardex_id',
             name: 'data[Kardex][kardex_id]'
         }

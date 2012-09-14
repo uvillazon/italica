@@ -76,9 +76,9 @@ class DATABASE_CONFIG {
 	var $default = array(
 		'driver' => 'postgres',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'postgres',
-		'password' => 'postgres',
+		'host' => 'doptima.com',
+		'login' => 'doptimac_italica1',
+		'password' => 'italica',
 		'database' => 'doptimac_italica',
 		'prefix' => '',
 		'encoding' => 'utf8',
