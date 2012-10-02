@@ -6,7 +6,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
     itemSeleccionado:'',
     border:1,
     width:500,
-  
+    autoScroll:true,
     height:530,
     fieldDefaults: {
         msgTarget: 'under',
@@ -134,7 +134,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
         ,
         {
             xtype:'textarea',
-            name:'data[Producto][kardex_ubicacion_producto]',
+            name:'data[Producto][producto_ubicacion]',
             itemId:'ubicacion',
             readOnly:true,
             fieldLabel:'Ubicaci\u00f3n',
@@ -150,23 +150,9 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             xtype:'numberfield',
             itemId:'costo',
             fieldLabel:'Costo',
+            minValue:0,
             readOnly:true,
             name:'data[Producto][producto_costo]',
-            hideTrigger:true
-        },{
-            xtype:'numberfield',
-            itemId:'stockinicial',
-            fieldLabel:'Stock Inicial',
-            name:'data[Kardex][kardex_saldo_cantidad]',
-            readOnly:true,
-            hideTrigger:true
-
-        },{
-            xtype:'numberfield',
-            itemId:'stockminimo',
-            fieldLabel:'Stock Min.',
-            name:'data[Producto][producto_cantidad_minima]',
-            readOnly:true,
             hideTrigger:true
         },{
             xtype: 'filefield',
@@ -176,10 +162,74 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             hidden:true,
             name: 'photo-path',
             buttonText: '',
-            
             buttonConfig: {
                 iconCls: 'image_add'
             }
+        },{
+            xtype:'numberfield',
+            itemId:'stockminimo',
+            fieldLabel:'Stock Min.',
+            minValue:0,
+            name:'data[Producto][producto_cantidad_minima]',
+            readOnly:true,
+            hideTrigger:true
+        },{
+            xtype:'fieldset',
+            border:1,
+            items:[{
+                xtype:'fieldcontainer',
+                itemId:'stockinicial',
+                fieldLabel:'Stock Inicial',
+                items:[{
+                    xtype:'panel',
+                    layout:{
+                        type:'table',
+                        columns:2,
+                        tableAttrs: {
+                            style: {
+                                width: '100%'
+                            }
+                        }
+                    },
+                    baseCls:'x-plain',
+                    defaults: {
+                        frame:true,
+                        hideLabel: true,
+                        width:73,
+                        height:'100%'
+                    },
+                    items:[
+                    {
+                        xtype:'displayfield',
+                        value:'SAN MARTIN'
+                    },{
+                        xtype:'numberfield',
+                        itemId:'stockinicial1',
+                        readOnly:true,
+                        name:'data[Kardex][1]'
+                    },{
+                        xtype:'displayfield',
+                        value:'ALCANTARA'
+                    },{
+                        xtype:'numberfield',
+                        itemId:'stockinicial2',
+                        readOnly:true,
+                        name:'data[Kardex][2]'
+                    },{
+                        xtype:'displayfield',
+                        value:'FALSURI'
+                    },{
+                        xtype:'numberfield',
+                        itemId:'stockinicial3',
+                        readOnly:true,
+                        name:'data[Kardex][3]'
+                    }
+
+                    ]
+                }]
+            }
+
+            ]
         },
         
         {
@@ -188,8 +238,16 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             name: 'data[Producto][producto_id]'
         }, {
             xtype:'hidden',
-            itemId:'kardex_id',
-            name: 'data[Kardex][kardex_id]'
+            itemId:'kardex_id_1',
+            name: 'data[Kardex][kardex_id_1]'
+        },{
+            xtype:'hidden',
+            itemId:'kardex_id_2',
+            name: 'data[Kardex][kardex_id_2]'
+        },{
+            xtype:'hidden',
+            itemId:'kardex_id_3',
+            name: 'data[Kardex][kardex_id_3]'
         }
         ];
         this.tbar=[{
@@ -223,15 +281,18 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
         form.down('#ubicacion').setReadOnly(false);
         form.down('#precio').setReadOnly(false);
         form.down('#costo').setReadOnly(false);
+        form.down('#imagenfile').setVisible(true);
         form.down('#stockminimo').setReadOnly(false);
-        form.down('#stockinicial').setReadOnly(false);
+        form.down('#stockinicial1').setReadOnly(false);
+        form.down('#stockinicial2').setReadOnly(false);
+        form.down('#stockinicial3').setReadOnly(false);
         form.down('#id').setReadOnly(false);
         form.down('#btnCat').setVisible(true);
         form.down('#btnMar').setVisible(true);
         form.down('#btnUni').setVisible(true);
         form.down('#btnGuardar').setDisabled(false);
         form.down('#btnCancelar').setDisabled(false);
-        form.down('#imagenfile').setVisible(true);
+        
     },
     modoNoEdicion:function(form){
         form.down('#codigo').setReadOnly(true);
@@ -243,15 +304,18 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
         form.down('#ubicacion').setReadOnly(true);
         form.down('#precio').setReadOnly(true);
         form.down('#costo').setReadOnly(true);
+        form.down('#imagenfile').setVisible(false);
         form.down('#stockminimo').setReadOnly(true);
-        form.down('#stockinicial').setReadOnly(true);
+        form.down('#stockinicial1').setReadOnly(true);
+        form.down('#stockinicial2').setReadOnly(true);
+        form.down('#stockinicial3').setReadOnly(true);
         form.down('#id').setReadOnly(true);
         form.down('#btnCat').setVisible(false);
         form.down('#btnMar').setVisible(false);
         form.down('#btnUni').setVisible(false);
         form.down('#btnGuardar').setDisabled(true);
         form.down('#btnCancelar').setDisabled(true);
-        form.down('#imagenfile').setVisible(false);
+        
         if(!form.down('#id').getValue()){
             form.limpiarFormulario(form);
         }
@@ -267,14 +331,49 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
         form.down('#categoria').setValue(selection.data['categoria_id']);
         form.down('#marca').setValue(selection.data['marca_id']);
         form.down('#unidad').setValue(selection.data['unidad_id']);
-        form.down('#ubicacion').setValue(Ext.String.trim(selection.data['kardex_ubicacion_producto']));
+        form.down('#ubicacion').setValue(Ext.String.trim(selection.data['producto_ubicacion']));
         form.down('#precio').setValue(selection.data['producto_precio']);
         form.down('#costo').setValue(selection.data['producto_costo']);
-        form.down('#stockminimo').setValue(selection.data['producto_cantidad_minima']);
-        form.down('#stockinicial').setValue(selection.data['kardex_saldo_cantidad']);
+        form.down('#stockminimo').setValue(selection.data['producto_cantidad_minima']);        
         form.down('#id').setValue(selection.data['producto_id']);
-         form.down('#kardex_id').setValue(selection.data['kardex_id']);
+        form.down('#kardex_id_1').setValue('');
+        form.down('#kardex_id_2').setValue('');
+        form.down('#kardex_id_3').setValue('');
         form.down('#imagen').setSrc(selection.data['producto_imagen']);
+        form.down('#stockinicial1').setValue(0);
+        form.down('#stockinicial2').setValue(0);
+        form.down('#stockinicial3').setValue(0);
+        var storeKardex=Ext.create("App.Conf.Productos.Stores.StoreKardex");
+        storeKardex.load({
+            params:{
+                producto_id:selection.data['producto_id']
+            }
+        });
+        storeKardex.on('load',function(){
+
+            storeKardex.each(function(record){
+                //console.log(record.sucursal_id);
+                if(record.raw['kardex_tipo_mov']=='I'){
+                     form.down('#stockinicial').setFieldLabel('Stock Inicial');
+                }else{
+                    form.down('#stockinicial').setFieldLabel('Stock Actual');
+                }
+                if (record.raw['sucursal_id']==1){
+                    form.down('#stockinicial1').setValue(record.raw['kardex_saldo_cantidad']);
+                    form.down('#kardex_id_1').setValue(record.raw['kardex_id']);
+                }else{                    
+                    if (record.raw['sucursal_id']==2){
+                        form.down('#stockinicial2').setValue(record.raw['kardex_saldo_cantidad']);
+                        form.down('#kardex_id_2').setValue(record.raw['kardex_id']);
+                    }else{                        
+                        if (record.raw['sucursal_id']==3){
+                            form.down('#stockinicial3').setValue(record.raw['kardex_saldo_cantidad']);
+                            form.down('#kardex_id_3').setValue(record.raw['kardex_id']);
+                        }
+                    }
+                }
+            });
+        });
     },
     AddCategoria:function(){
         var grid=Ext.create("App.Conf.Categorias.Vistas.gridCategorias",{
@@ -375,7 +474,13 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
     },
     eliminarSeleccionado:function(form,grid){
         var id=form.down('#id').getValue();
-         var kardex_id=form.down('#kardex_id').getValue();
+        var kardex_id;
+        try {
+            kardex_id=form.down('#kardex_id').getValue();
+        } catch (exception) {
+            kardex_id=0;
+        }
+
         Ext.MessageBox.confirm('Confirmar ', 'Desea eliminar el registro seleccionado ?.\n'+
             ' El registro se eliminar\u00e1 definitivamente sin opci\u00f3n a recuperarlo', function(btn){
                 if(btn=='yes'){
@@ -391,6 +496,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
                             var info = Ext.decode(response.responseText);
                             if (info.success){
                                 grid.recargarStoreSelP(grid);
+                                form.limpiarFormulario(form);
                             }
                             Ext.example.msg('Eliminar Producto', info.msg);
                         },

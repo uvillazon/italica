@@ -1,7 +1,8 @@
 Ext.define("App.Conf.Productos.Vistas.GridProductos",{
     extend      : "Ext.grid.Panel",
     alias: 'widget.GridProductos',
-   
+    autoScroll:true,
+    stateful: true,
     border      : true,
     store: Ext.create("App.Conf.Productos.Stores.StoreProductos"),
     loadMask: true,
@@ -9,9 +10,13 @@ Ext.define("App.Conf.Productos.Vistas.GridProductos",{
     minWidth:400,
     minHeight:400,
    
+    viewConfig: {
+        stripeRows: true,
+        enableTextSelection: true
+    },
     initComponent   : function() {
         var me = this;     
-          var mascara=new Ext.LoadMask(this, {
+        var mascara=new Ext.LoadMask(this, {
             msg:'Cargando......'
         });
         me.columns = [
@@ -73,18 +78,22 @@ Ext.define("App.Conf.Productos.Vistas.GridProductos",{
         },{
             header:"Ubicaci\u00f3n",
             dataIndex:"kardex_ubicacion_producto",
+            hidden:true,
             flex:1
         },{
             header:"Stock Minimo",
             dataIndex:"producto_cantidad_minima",
+            hidden:true,
             flex:1
         },{
             header:"Precio",
             dataIndex:"producto_precio",
+            hidden:true,
             flex:1
         },{
             header:"Costo",
             dataIndex:"producto_costo",
+            hidden:true,
             flex:1
         }
         ];
@@ -123,13 +132,13 @@ Ext.define("App.Conf.Productos.Vistas.GridProductos",{
             });
         });
     },
-   recargarStoreSelP:function(grid){
+    recargarStoreSelP:function(grid){
         grid.store.load();
         grid.store.on('load', function(store, records, options){
-             grid.getSelectionModel().select(0);
+            grid.getSelectionModel().select(0);
           
         });
-   },
+    },
     cancelar: function (){
         var grid= Ext.getCmp("gridArticulos");
         grid.miVentana.close();

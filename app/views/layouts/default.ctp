@@ -15,9 +15,15 @@
 <!-- page specific -->
 <style type="text/css">
     /* style rows on mouseover */
+		
+    /*.x-grid-row .x-grid-cell-inner {
+    		white-space: normal;
+    }*/
     .x-grid-row-over .x-grid-cell-inner {
-        font-weight: bold;
-    }
+    		font-weight: bold;
+    		/*white-space: normal;*/
+    	}
+    
      .search-item{
         border:1px solid #fff;
         padding:3px;
