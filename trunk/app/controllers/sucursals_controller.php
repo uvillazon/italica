@@ -29,7 +29,7 @@ class SucursalsController extends AppController {
 
 
         $conquery = "SELECT s.sucursal_id,s.sucursal_nombre, s.sucursal_dir
-                    FROM sucursals s WHERE s.sucursal_id>0 $filter ORDER BY s.sucursal_nombre LIMIT $limit OFFSET $start;";
+                    FROM sucursals s WHERE 0=0 $filter ORDER BY s.sucursal_nombre LIMIT $limit OFFSET $start;";
         $consulta1 = $this->Sucursal->query($conquery);
         $cadena1 = Set::extract($consulta1, '{n}.0');
         $count = count($cadena1);

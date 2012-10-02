@@ -5,10 +5,9 @@ Ext.define("App.Conf.Productos.Modelos.ModeloStoreProductos",{
         {name:"categoria_id",type:"int"},
         {name:"marca_id",type:"int"},
         {name:"unidad_id",type:"int"},
-        {name:"kardex_id",type:"int"},
-        {name:"kardex_saldo_cantidad",type:"int"},
+       
         {name:"sucursal_id",type:"int"},
-        {name:"kardex_ubicacion_producto",type:"string"},
+        {name:"producto_ubicacion",type:"string"},
         {name:"producto_cantidad_minima",type:"float"},
         {name:"producto_precio",type:"float"},
         {name:"producto_codigo_barra",type:"float"},
@@ -20,6 +19,12 @@ Ext.define("App.Conf.Productos.Modelos.ModeloStoreProductos",{
         {name:"producto_nombre",type:"string"},
         {name:"marca_nombre",type:"string"},
         {name:"categoria_nombre",type:"string"},
+        {name:"kardex_saldo_cantidad1",type:"float"},
+        {name:"kardex_saldo_valor1",type:"float"},
+        {name:"kardex_saldo_cantidad2",type:"float"},
+        {name:"kardex_saldo_valor2",type:"float"},
+        {name:"kardex_saldo_cantidad3",type:"float"},
+        {name:"kardex_saldo_valor3",type:"float"},
         {name:"unidad_sigla",type:"string"}
     ]
 });

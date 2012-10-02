@@ -1,6 +1,6 @@
 <?php
 App::import('Controller', 'rols');
-class ProductosController extends AppController {
+class ComprasController extends AppController {
 
     var $helpers = array('Html', 'Form', 'Javascript');
     var $components = array('RequestHandler');
@@ -8,14 +8,14 @@ class ProductosController extends AppController {
     function test() {
         $this->layout = 'ajax';
         echo "<pre>";
-        echo print_r($this->Producto->find('all'));
+        echo print_r($this->Compra->find('all'));
         echo "</pre>";
     }
     function detalle(){
         //Configure::write('debug', '0');// deshabilitamos el debug de cakephp
         $this->render('vistas/detalle');
     }
-    function producto(){
+    function compra(){
         Configure::write('debug', '0');// deshabilitamos el debug de cakephp
         $rols = new RolsController();
         $datosSesion=$this->tieneSesion();
@@ -23,7 +23,11 @@ class ProductosController extends AppController {
         $permisos=$rols->verificar_permisos($_REQUEST['opcionId'],$datosSesion['Rol']['rol_id'],$this->Producto);
         //echo print_r($permisos);
         $this->set('permisos',$permisos);
-        $this->render('vistas/producto');
+        $this->render('vistas/compra');
+    }
+    
+    function get_proximo_id(){
+        
     }
 
     //funcion que retorna todas las unidades registradas en BD
@@ -39,27 +43,13 @@ class ProductosController extends AppController {
         $limit=$_REQUEST['limit'];
         else
         $limit=10000;
-        if(isset($_REQUEST['categoria_id'])){
-            if($_REQUEST['categoria_id']>0)
-            $filtro=" AND c.categoria_id=".$_REQUEST['categoria_id'];
-            else
-            $filtro="";
-        }
-        else
-        $filtro="";
-        if(isset($_REQUEST['palabra'])){
-            $palabra=strtoupper($_REQUEST['palabra']);
-            $filtro2=" AND (upper(p.producto_nombre) LIKE'%".$palabra."%' OR upper(p.producto_codigo) LIKE'%".$palabra."%')";
-        }
-        
-        else
-        $filtro2="";
+
         $conquery = "SELECT p.*,c.*,u.*,m.*
                     FROM productos p
                     INNER JOIN categorias c ON c.categoria_id=p.categoria_id
                     INNER JOIN marcas m ON m.marca_id=p.marca_id
                     INNER JOIN unidads u ON u.unidad_id=p.unidad_id
-                    WHERE 0=0 $filtro $filtro2
+
                     ORDER BY p.producto_nombre
                     LIMIT $limit OFFSET $start
                 ";
@@ -177,11 +167,11 @@ class ProductosController extends AppController {
                     }
                 }
             }else{
-                if ($this->Producto->delete($id)) {
-                    $info = array('success' => true,'msg'=>'El registro seleccionado fue eliminado correctamente');
-                }else {
-                    $info = array('success' => false,'msg'=>'No se pudo eliminar el registro seleccionado');
-                }
+               if ($this->Producto->delete($id)) {
+                        $info = array('success' => true,'msg'=>'El registro seleccionado fue eliminado correctamente');
+                    }else {
+                        $info = array('success' => false,'msg'=>'No se pudo eliminar el registro seleccionado');
+                    }
             }
 
 

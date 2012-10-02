@@ -95,7 +95,7 @@ Ext.define("App.Conf.Categorias.Vistas.gridCategorias",{
     },
 
     nuevo: function(){
-        alert(this.getComponent('name').getId());
+        //alert(this.getComponent('name').getId());
         var grid= Ext.getCmp("gridCategorias");
         var Form=Ext.create("App.Conf.Categorias.Vistas.FormNuevaCategoria",{
 

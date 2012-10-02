@@ -276,7 +276,7 @@
                     xtype: 'box',
                     id: 'header',
                     region: 'north',
-                    html: '<h1>ITALICA</h1>',
+                    html: '<h1>ITALICA - <?php echo $sucursal;?></h1>',
                     height: 30,
                     items:[
                         {

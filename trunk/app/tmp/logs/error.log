@@ -637,3 +637,154 @@ DETAIL:  Key (producto_id)=(6) is still referenced from table &quot;kardexes&quo
 2012-09-14 16:13:15 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
 2012-09-14 16:13:15 Warning: Warning (2): pg_last_error(): supplied argument is not a valid PostgreSQL link resource in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 342]
 2012-09-14 16:13:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\italica\cake\libs\debugger.php:686) in [C:\xampp\htdocs\italica\cake\libs\controller\controller.php, line 742]
+2012-09-15 16:49:22 Warning: Warning (2): pg_connect() [<a href='http://php.net/function.pg-connect'>function.pg-connect</a>]: Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;doptima.com&quot; and accepting
+	TCP/IP connections on port 5432? in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 119]
+2012-09-15 16:49:23 Warning: Warning (2): pg_set_client_encoding(): supplied argument is not a valid PostgreSQL link resource in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 867]
+2012-09-15 16:49:23 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-15 16:49:23 Warning: Warning (2): pg_last_error(): supplied argument is not a valid PostgreSQL link resource in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 342]
+2012-09-15 16:49:23 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\italica\cake\libs\debugger.php:686) in [C:\xampp\htdocs\italica\cake\libs\controller\controller.php, line 742]
+2012-09-15 18:50:14 Warning: Warning (2): pg_connect() [<a href='http://php.net/function.pg-connect'>function.pg-connect</a>]: Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;doptima.com&quot; and accepting
+	TCP/IP connections on port 5432? in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 119]
+2012-09-15 18:50:14 Warning: Warning (2): pg_set_client_encoding(): supplied argument is not a valid PostgreSQL link resource in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 867]
+2012-09-15 18:50:14 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-15 18:50:14 Warning: Warning (2): pg_last_error(): supplied argument is not a valid PostgreSQL link resource in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 342]
+2012-09-15 18:50:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\italica\cake\libs\debugger.php:686) in [C:\xampp\htdocs\italica\cake\libs\controller\controller.php, line 742]
+2012-09-17 13:52:19 Warning: Warning (2): pg_connect() [<a href='http://php.net/function.pg-connect'>function.pg-connect</a>]: Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;doptima.com&quot; and accepting
+	TCP/IP connections on port 5432? in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 119]
+2012-09-17 13:52:19 Warning: Warning (2): pg_set_client_encoding(): supplied argument is not a valid PostgreSQL link resource in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 867]
+2012-09-17 13:52:19 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 13:52:19 Warning: Warning (2): pg_last_error(): supplied argument is not a valid PostgreSQL link resource in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 342]
+2012-09-17 13:52:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\italica\cake\libs\debugger.php:686) in [C:\xampp\htdocs\italica\cake\libs\controller\controller.php, line 742]
+2012-09-17 15:23:12 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing FROM-clause entry for table &quot;k&quot;
+LINE 1: SELECT p.*,c.*,u.*,m.*,k.kardex_id,k.kardex_saldo_cantidad
+                               ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 15:23:31 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing FROM-clause entry for table &quot;k&quot;
+LINE 1: SELECT p.*,c.*,u.*,m.*,k.kardex_id,k.kardex_saldo_cantidad
+                               ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 15:23:41 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing FROM-clause entry for table &quot;k&quot;
+LINE 1: SELECT p.*,c.*,u.*,m.*,k.kardex_id,k.kardex_saldo_cantidad
+                               ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 17:06:14 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  relation &quot;kardex&quot; does not exist in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 17:06:30 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  relation &quot;kardex&quot; does not exist in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 17:06:30 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> ERROR:  relation "kardex" does not exist</span> in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo_source.php, line 684]
+2012-09-17 17:06:46 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing FROM-clause entry for table &quot;p&quot;
+LINE 4:                     ORDER BY p.producto_nombre
+                                     ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 17:06:46 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> ERROR:  missing FROM-clause entry for table "p"
+LINE 4:                     ORDER BY p.producto_nombre
+                                     ^</span> in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo_source.php, line 684]
+2012-09-17 17:51:16 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...pdate ingresos set fecha_hora_salida='NOW' where ingreso_id=
+                                                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 19:45:59 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...pdate ingresos set fecha_hora_salida='NOW' where ingreso_id=
+                                                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 19:46:18 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...pdate ingresos set fecha_hora_salida='NOW' where ingreso_id=
+                                                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 19:46:38 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 19:49:59 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...pdate ingresos set fecha_hora_salida='NOW' where ingreso_id=
+                                                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 19:50:13 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 19:50:21 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 19:50:29 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 19:51:28 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 19:51:50 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 19:52:56 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 19:53:43 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 20:03:29 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...pdate ingresos set fecha_hora_salida='NOW' where ingreso_id=
+                                                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:03:45 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column Sucursal.id does not exist
+LINE 1: ...sals&quot; AS &quot;Sucursal&quot; ON (&quot;Usuario&quot;.&quot;sucursal_id&quot; = &quot;Sucursal&quot;...
+                                                             ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:03:45 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 20:03:51 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column Sucursal.id does not exist
+LINE 1: ...sals&quot; AS &quot;Sucursal&quot; ON (&quot;Usuario&quot;.&quot;sucursal_id&quot; = &quot;Sucursal&quot;...
+                                                             ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:03:51 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 20:03:58 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column Sucursal.id does not exist
+LINE 1: ...sals&quot; AS &quot;Sucursal&quot; ON (&quot;Usuario&quot;.&quot;sucursal_id&quot; = &quot;Sucursal&quot;...
+                                                             ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:03:59 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 20:04:05 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column Sucursal.id does not exist
+LINE 1: ...sals&quot; AS &quot;Sucursal&quot; ON (&quot;Usuario&quot;.&quot;sucursal_id&quot; = &quot;Sucursal&quot;...
+                                                             ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:04:05 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 20:04:17 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column Sucursal.id does not exist
+LINE 1: ...sals&quot; AS &quot;Sucursal&quot; ON (&quot;Usuario&quot;.&quot;sucursal_id&quot; = &quot;Sucursal&quot;...
+                                                             ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:04:17 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 20:04:56 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column Sucursal.id does not exist
+LINE 1: ...sals&quot; AS &quot;Sucursal&quot; ON (&quot;Usuario&quot;.&quot;sucursal_id&quot; = &quot;Sucursal&quot;...
+                                                             ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:04:56 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 20:05:23 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column Sucursal.id does not exist
+LINE 1: ...sals&quot; AS &quot;Sucursal&quot; ON (&quot;Usuario&quot;.&quot;sucursal_id&quot; = &quot;Sucursal&quot;...
+                                                             ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:05:23 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-17 20:05:57 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column Sucursal.id does not exist
+LINE 1: ...sals&quot; AS &quot;Sucursal&quot; ON (&quot;Usuario&quot;.&quot;sucursal_id&quot; = &quot;Sucursal&quot;...
+                                                             ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:05:57 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column Sucursal.id does not exist
+LINE 1: ...sals" AS "Sucursal" ON ("Usuario"."sucursal_id" = "Sucursal"...
+                                                             ^</span> in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo_source.php, line 684]
+2012-09-17 20:07:08 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column Sucursal.id does not exist
+LINE 1: ...sals&quot; AS &quot;Sucursal&quot; ON (&quot;Usuario&quot;.&quot;sucursal_id&quot; = &quot;Sucursal&quot;...
+                                                             ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:07:08 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column Sucursal.id does not exist
+LINE 1: ...sals" AS "Sucursal" ON ("Usuario"."sucursal_id" = "Sucursal"...
+                                                             ^</span> in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo_source.php, line 684]
+2012-09-17 20:09:43 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...pdate ingresos set fecha_hora_salida='NOW' where ingreso_id=
+                                                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:10:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...pdate ingresos set fecha_hora_salida='NOW' where ingreso_id=
+                                                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-17 20:13:47 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...pdate ingresos set fecha_hora_salida='NOW' where ingreso_id=
+                                                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-19 17:33:34 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-19 17:33:39 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-19 17:33:50 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-21 15:09:43 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-21 15:09:43 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-21 15:09:43 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-21 15:09:43 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-21 15:09:43 Error: Salida sin sesión abierta
+2012-09-21 15:09:43 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-21 15:09:43 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\italica\cake\libs\debugger.php:686) in [C:\xampp\htdocs\italica\cake\libs\controller\controller.php, line 742]
+2012-09-22 13:20:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...pdate ingresos set fecha_hora_salida='NOW' where ingreso_id=
+                                                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-22 13:24:35 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  null value in column &quot;producto_ubicacion&quot; violates not-null constraint in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-22 13:24:35 Error: no se pudo almacenar el producto nuevo en, Productos por->super               
+2012-09-22 13:27:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  null value in column &quot;kardex_tipo_mov&quot; violates not-null constraint in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-22 13:27:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  null value in column &quot;kardex_tipo_mov&quot; violates not-null constraint in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-22 13:27:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  null value in column &quot;kardex_tipo_mov&quot; violates not-null constraint in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-22 13:43:32 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  update or delete on table &quot;productos&quot; violates foreign key constraint &quot;fk_kardexes_relations_producto&quot; on table &quot;kardexes&quot;
+DETAIL:  Key (producto_id)=(3) is still referenced from table &quot;kardexes&quot;. in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-09-22 16:14:32 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-09-23 23:08:10 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-23 23:08:10 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-23 23:08:10 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-24 12:28:22 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-24 12:28:22 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-24 12:28:22 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-26 15:27:05 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-09-26 15:27:06 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\italica\cake\libs\debugger.php:686) in [C:\xampp\htdocs\italica\cake\libs\controller\controller.php, line 742]
+2012-10-02 16:39:57 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-10-02 16:40:07 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-10-02 17:30:18 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  record &quot;new&quot; is not assigned yet
+DETAIL:  The tuple structure of a not-yet-assigned record is indeterminate.
+CONTEXT:  PL/pgSQL function &quot;actualizar_log_lardex&quot; line 3 at SQL statement in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-10-02 17:30:18 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  record &quot;new&quot; is not assigned yet
+DETAIL:  The tuple structure of a not-yet-assigned record is indeterminate.
+CONTEXT:  PL/pgSQL function &quot;actualizar_log_lardex&quot; line 3 at SQL statement in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-10-02 17:30:18 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  record &quot;new&quot; is not assigned yet
+DETAIL:  The tuple structure of a not-yet-assigned record is indeterminate.
+CONTEXT:  PL/pgSQL function &quot;actualizar_log_lardex&quot; line 3 at SQL statement in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
