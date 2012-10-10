@@ -5,9 +5,9 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
     title:'Detalle',
     itemSeleccionado:'',
     border:1,
-    width:500,
+    minWidth:200,
     autoScroll:true,
-    height:530,
+    minHeight:330,
     fieldDefaults: {
         msgTarget: 'under',
         labelWidth: 75
@@ -15,7 +15,17 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
     defaultType: 'textfield',
     layout: {
         type: 'table',
-        columns: 2
+        columns: 2,
+        tdAttrs: {
+                    style: {
+                        width:'20%'
+                    }
+                },
+                tableAttrs: {
+                    style: {
+                        width:'98%'
+                    }
+                }
     },
     defaults: {
         frame:false,
@@ -26,18 +36,21 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
         var comboCategorias=Ext.create("App.Conf.Categorias.Vistas.ComboCategorias",{
             id:'comboCatProducto',
             itemId:'categoria',
+            width:205,
             readOnly:true,
             name:'data[Producto][categoria_id]'
         });
         var comboMarcas=Ext.create("App.Conf.Marcas.Vistas.ComboMarcas",{
             id:'comboMarProducto',
             readOnly:true,
+             width:205,
             itemId:'marca',
             name:'data[Producto][marca_id]'
         });
         var comboUnidades=Ext.create("App.Conf.Unidades.Vistas.ComboUnidades",{
             id:'comboUniProducto',
             readOnly:true,
+             width:205,
             itemId:'unidad',
             name:'data[Producto][unidad_id]'
         });
@@ -84,7 +97,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             layout: 'hbox',
             fieldDefaults: {
                 msgTarget: 'under',
-                labelWidth: 95
+                labelWidth: 75
             },
             items:[
             comboCategorias,
@@ -93,7 +106,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
                 itemId:'btnCat',
                 iconCls:'overlays',
                 hidden:true,
-                width:30,
+                width:25,
                 handler: this.AddCategoria
             }]
         },{
@@ -101,7 +114,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             layout: 'hbox',
             fieldDefaults: {
                 msgTarget: 'under',
-                labelWidth: 95
+                labelWidth: 75
             },
             items:[
             comboMarcas,
@@ -110,7 +123,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
                 iconCls:'overlays',
                 itemId:'btnMar',
                 hidden:true,
-                width:30,
+                width:25,
                 handler: this.AddMarca
             }]
         },{
@@ -118,7 +131,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             layout: 'hbox',
             fieldDefaults: {
                 msgTarget: 'under',
-                labelWidth: 95
+                labelWidth: 75
             },
             items:[
             comboUnidades,
@@ -127,7 +140,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
                 iconCls:'overlays',
                 itemId:'btnUni',
                 hidden:true,
-                width:30,
+                width:25,
                 handler: this.AddUnidad
             }]
         },
@@ -271,8 +284,8 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
         this.callParent(arguments);
     },
     modoEdicion:function(form){
-        form.down('#codigo').setReadOnly(false);
-        form.down('#codigo').focus("",100);
+       
+        form.down('#codigo').setReadOnly(false);       
         form.down('#codigo_prov').setReadOnly(false);
         form.down('#nombre').setReadOnly(false);
         form.down('#categoria').setReadOnly(false);
@@ -292,7 +305,8 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
         form.down('#btnUni').setVisible(true);
         form.down('#btnGuardar').setDisabled(false);
         form.down('#btnCancelar').setDisabled(false);
-        
+         form.down('#codigo').focus("",10);
+      
     },
     modoNoEdicion:function(form){
         form.down('#codigo').setReadOnly(true);
@@ -385,7 +399,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             items:[grid],
             height:370,
             buttons:[{
-                text: 'Cancelar',
+                text: 'Salir',
                 iconCls: 'cross',
                 handler: function(){
                     win.hide();
@@ -405,7 +419,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             items:[grid],
             height:370,
             buttons:[{
-                text: 'Cancelar',
+                text: 'Salir',
                 iconCls: 'cross',
                 handler: function(){
                     win.hide();
@@ -425,7 +439,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             items:[grid],
             height:370,
             buttons:[{
-                text: 'Cancelar',
+                text: 'Salir',
                 iconCls: 'cross',
                 handler: function(){
                     win.hide();

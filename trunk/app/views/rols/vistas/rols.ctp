@@ -48,14 +48,16 @@
         });
 
         var grid = Ext.create('Ext.grid.Panel', {
-            width: '60%',
+            width:"60%",
             height: 500,
             stateful: true,
+            region:'center',
             title: 'Listado de Roles',
             store: store,
-            forceFit: true,
-            region: 'west',
-
+            viewConfig: {
+                forceFit:true
+                //fitcontainer:true
+            },
             //columnLines: true,
             // grid columns
             columns:[Ext.create('Ext.grid.RowNumberer'),{
@@ -85,19 +87,19 @@
                     items: [{
                             text: 'Nuevo',
                             iconCls: 'add',
-                            hidden:<?php echo $permisos["c"]?>,
+                            hidden:<?php echo $permisos["c"] ?>,
                             handler: nuevo
                         }, '-',{
                             text: 'Modificar',
                             itemId: 'edit',
                             disabled: true,
-                            hidden:<?php echo $permisos["w"]?>,
+                            hidden:<?php echo $permisos["w"] ?>,
                             iconCls: 'page_edit',
                             handler: modificar
                         },'-', {
                             itemId: 'delete',
                             text: 'Eliminar',
-                            hidden:<?php echo $permisos["d"]?>,
+                            hidden:<?php echo $permisos["d"] ?>,
                             iconCls: 'delete',
                             disabled: true,
                             handler: eliminar
@@ -201,10 +203,12 @@
 
 
             ],
-            //columnLines: true,
-            forceFit: true,
-            region: 'east',
-            width: '40%',
+           
+            width: "40%",
+            stateful: true,
+            region:'east',
+            split:true,
+            collapsible: true,
             height: 500,
             frame: true,
             dockedItems: [{
@@ -253,7 +257,7 @@
                             // text: 'Permisos',
                             disabled:true,
                             itemId: 'permisos',
-                            hidden:<?php echo $permisos["w"]?>,
+                            hidden:<?php echo $permisos["w"] ?>,
                             iconCls: 'application_key',
                             tooltip:'Edita los permisos de la opci\u00f3n seleccionada',
                             handler: function(){
@@ -263,7 +267,7 @@
                             //nueva opcion,
                             iconCls: 'add',
                             tooltip:'Crea una nueva opci\u00f3n ',
-                            hidden:<?php echo $permisos["c"]?>,
+                            hidden:<?php echo $permisos["c"] ?>,
                             handler: function(){
                                 nuevaOpcion(false);
                             }
@@ -271,7 +275,7 @@
                             //editar opcion
                             disabled:true,
                             iconCls: 'page_edit',
-                            hidden:<?php echo $permisos["w"]?>,
+                            hidden:<?php echo $permisos["w"] ?>,
                             itemId: 'edit',
                             tooltip:'Edita  la opci\u00f3n seleccionada',
                             handler: function(){
@@ -281,7 +285,7 @@
                             //eliminar opcion
                             disabled:true,
                             itemId: 'delete',
-                            hidden:<?php echo $permisos["d"]?>,
+                            hidden:<?php echo $permisos["d"] ?>,
                             iconCls: 'delete',
                             tooltip:'Elimina de la opci\u00f3n seleccionada',
                             handler: function(){
@@ -344,9 +348,14 @@
             renderTo: 'panel_rols',
             frame: true,
             // title: '',
-            width: '98%',
+            width: '100%',          
             height: 600,
-            layout: 'border',
+            layout: {
+                type: 'border'
+            },
+            defaults: {
+                split: true
+            },
             items: [
                 grid,gridMenu ]
         });

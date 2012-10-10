@@ -7,6 +7,8 @@
 <link rel="stylesheet" type="text/css" href="/libs/ext41/resources/css/ext-all.css" />
 <link rel="stylesheet" type="text/css" href="/libs/ext41/examples/shared/example.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo $html->url('/app/webroot/css/', true); ?>icons.css" />
+<link rel="stylesheet" type="text/css" href="/libs/ext41/examples/layout-browser/layout-browser.css">
+
 <script type="text/javascript" src="/libs/ext41/ext-all.js"></script>
 <script type="text/javascript" src="/libs/ext41/examples/shared/examples.js"></script>
 <script type="text/javascript" src="/libs/ext41/locale/ext-lang-es.js"></script>

@@ -3,8 +3,8 @@ Ext.define("App.Procesos.Producto.Vistas.PanelDetalleProductoGrid", {
     alias: "widget.PanelDetalleProductoGrid",    
     title: '',
     layout: 'form',
-    bodyPadding: '10 10 10',
-    width:450,
+    bodyPadding: '5 10 10',
+    width:'100%',
     height:530,
     initComponent: function() {
         var comboCategorias = Ext.create("App.Conf.Categorias.Vistas.ComboCategorias",{
@@ -13,6 +13,7 @@ Ext.define("App.Procesos.Producto.Vistas.PanelDetalleProductoGrid", {
         
         var me= this;
         var grid = Ext.create("App.Procesos.Producto.Vistas.GridDetalleProductos",{
+            width:'100%',
             height:420
         });
         me.items=[{
@@ -21,6 +22,7 @@ Ext.define("App.Procesos.Producto.Vistas.PanelDetalleProductoGrid", {
             value:'<center><h4>SELECCIONADOR DE ITEMS</h4></center>'
         },{
             xtype:'textfield',
+            
             fieldLabel:'BUSQUEDA',
             emptyText:'INGRESAR ITEM A BUSCAR......',
             enableKeyEvents: true,
@@ -42,6 +44,7 @@ Ext.define("App.Procesos.Producto.Vistas.PanelDetalleProductoGrid", {
         ];
         me.bbar=[ {
             xtype:'displayfield',
+           
             itemId:'descripcionAccion',
             hideLabel: true,
             value:'DESCRIPCION DE ACCION'
