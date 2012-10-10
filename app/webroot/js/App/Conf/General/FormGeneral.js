@@ -19,7 +19,7 @@
             iconCls: 'disk',
             handler: this.guardar
         }, '-',{
-            text: 'Cancelar',
+            text: 'Salir',
             iconCls: 'cross',
             handler: this.cancelar
         }];

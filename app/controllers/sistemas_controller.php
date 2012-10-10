@@ -177,7 +177,7 @@ class SistemasController extends AppController {
 
                                 FROM opciones op
                 $cons_rol
-                                WHERE  op.leaf=true AND op.opcion_padre=$nodo";
+                                WHERE  op.leaf=true AND op.opcion_padre=$nodo ORDER BY op.opcion_nombre";
             }
 
 

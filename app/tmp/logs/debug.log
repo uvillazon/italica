@@ -2328,3 +2328,694 @@
 2012-10-02 18:05:00 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
 2012-10-02 18:06:32 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
 2012-10-02 18:12:20 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-02 21:15:34 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-02 21:15:36 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-02 21:15:40 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\usuarios_controller.php, line 21]
+2012-10-02 21:16:27 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-02 21:16:27 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-02 21:16:27 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 18:10:41 Debug: Datos almacenados en la tabla Ingreso, Usuario->super               
+2012-10-03 18:10:41 Debug: Ingreso, Usuario->super               
+2012-10-03 18:10:48 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-03 18:10:49 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-03 18:11:08 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 18:11:08 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 18:11:08 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 18:11:13 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 18:11:13 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 18:11:13 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 19:47:44 Debug: Datos almacenados en la tabla Ingreso, Usuario->super               
+2012-10-03 19:47:44 Debug: Ingreso, Usuario->super               
+2012-10-03 19:47:50 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-03 19:47:52 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-03 19:48:10 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 19:48:10 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 19:48:10 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 19:48:25 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 19:48:25 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 19:48:25 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 19:49:25 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 19:49:25 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 19:49:25 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 20:05:40 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:05:40 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:05:40 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:06:13 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:06:13 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:06:13 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:07:41 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:07:41 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:07:41 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:08:18 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-03 20:08:19 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-03 20:08:47 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 20:08:47 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 20:08:47 Debug: Producto 4 almacenada en, Productos por->super               
+2012-10-03 20:10:01 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:10:01 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:10:01 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:11:31 Debug: Notice (8): Undefined index:  file in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 92]
+2012-10-03 20:11:31 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 20:11:31 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 20:11:31 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 20:31:04 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-03 20:33:36 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-03 20:34:12 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:34:12 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:34:12 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:35:04 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:35:04 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:35:04 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:35:40 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:35:40 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:35:40 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 20:36:00 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 20:36:00 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 20:36:00 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 20:36:43 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-03 20:37:46 Debug: Notice (8): Undefined index:  file in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 92]
+2012-10-03 20:37:46 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 20:37:46 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 20:37:46 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 20:39:40 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-03 21:13:28 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:13:28 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:13:28 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:14:07 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:14:07 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:14:07 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:14:45 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:14:45 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:14:45 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:15:02 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-03 21:15:17 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 21:15:17 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 21:15:17 Debug: Producto 3 almacenada en, Productos por->super               
+2012-10-03 21:16:52 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-03 21:17:03 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 21:17:04 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 21:17:04 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 21:18:20 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 21:18:20 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 21:18:20 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-03 21:18:50 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-03 21:19:16 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:19:16 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:19:16 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:19:50 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:19:50 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:19:50 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:28:23 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-03 21:28:50 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:28:50 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:28:50 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:29:44 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:29:44 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:29:44 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:30:42 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:30:42 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 21:30:42 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:17:10 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:17:10 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:17:10 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:17:39 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:17:39 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:17:39 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:18:29 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:18:29 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:18:29 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:20:34 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:20:34 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:20:34 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:22:22 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:22:22 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:22:22 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:22:42 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:22:42 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-03 22:22:42 Debug: Producto 6 almacenada en, Productos por->super               
+2012-10-04 16:11:29 Debug: Datos almacenados en la tabla Ingreso, Usuario->super               
+2012-10-04 16:11:29 Debug: Ingreso, Usuario->super               
+2012-10-04 16:11:32 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-04 16:11:35 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-04 16:17:06 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-04 16:17:06 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-04 16:17:06 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-04 16:18:50 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-04 16:18:50 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-04 16:18:50 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-04 16:26:02 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-04 16:26:02 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-04 16:26:02 Debug: Producto 5 almacenada en, Productos por->super               
+2012-10-06 09:43:29 Debug: Datos almacenados en la tabla Ingreso, Usuario->admin               
+2012-10-06 09:43:29 Debug: Ingreso, Usuario->admin               
+2012-10-06 09:43:33 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:43:35 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:47:29 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:47:30 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:48:03 Debug: Producto 3 almacenada en, Productos por->admin               
+2012-10-06 09:48:03 Debug: Producto 3 almacenada en, Productos por->admin               
+2012-10-06 09:48:03 Debug: Producto 3 almacenada en, Productos por->admin               
+2012-10-06 09:52:58 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:53:22 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:53:23 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:53:26 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:53:44 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-06 09:53:54 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:53:56 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:53:57 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-06 09:54:46 Debug: Datos almacenados en la tabla Ingreso, Usuario->super               
+2012-10-06 09:54:46 Debug: Ingreso, Usuario->super               
+2012-10-06 09:54:51 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:54:53 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 09:54:57 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-06 09:55:20 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-06 11:21:39 Debug: Datos almacenados en la tabla Ingreso, Usuario->super               
+2012-10-06 11:21:39 Debug: Ingreso, Usuario->super               
+2012-10-06 11:21:42 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 11:21:44 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 11:21:47 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-06 11:22:19 Debug: Notice (8): Undefined variable: unidad_id in [C:\xampp\htdocs\italica\app\controllers\categorias_controller.php, line 69]
+2012-10-06 11:22:19 Debug: Categoria  almacenada en, Categorias por->super               
+2012-10-06 11:22:47 Debug: MArca 1 almacenada en, Marcas por->super               
+2012-10-06 11:23:04 Debug: Unidad 1 almacenada en, Unidads por->super               
+2012-10-06 11:23:53 Debug: Notice (8): Undefined index:  file in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 92]
+2012-10-06 11:23:53 Debug: Producto 1 almacenada en, Productos por->super               
+2012-10-06 11:23:53 Debug: Producto 1 almacenada en, Productos por->super               
+2012-10-06 11:23:53 Debug: Producto 1 almacenada en, Productos por->super               
+2012-10-09 16:56:44 Debug: Datos almacenados en la tabla Ingreso, Usuario->super               
+2012-10-09 16:56:44 Debug: Ingreso, Usuario->super               
+2012-10-09 16:56:50 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 16:56:52 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 16:56:55 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 16:57:04 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:23:35 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:23:37 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:27:03 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:30:02 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:30:04 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:30:26 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:30:27 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:33:16 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:33:20 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:34:02 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:34:04 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:34:10 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:40:16 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:40:18 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:40:19 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:40:19 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:40:52 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:40:52 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:41:45 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:41:45 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:44:32 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:44:34 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:44:37 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:44:39 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:45:30 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:45:31 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:45:33 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:50:25 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:50:27 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:50:30 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:52:28 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:52:29 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:52:31 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 18:53:47 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:53:48 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:53:50 Debug: Notice (8): Undefined property: CategoriasController::$Marca in [C:\xampp\htdocs\italica\app\controllers\categorias_controller.php, line 20]
+2012-10-09 18:54:00 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\usuarios_controller.php, line 21]
+2012-10-09 18:54:16 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 18:54:17 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 18:55:36 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:55:38 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:55:40 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 18:55:41 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 18:56:02 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 18:56:03 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 18:57:21 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 18:57:22 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 18:57:35 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 18:57:36 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 18:57:55 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 18:57:56 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 18:59:06 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:59:07 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 18:59:11 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 18:59:12 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:00:36 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:00:37 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:00:40 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:00:41 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:01:31 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:01:32 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:01:36 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 19:01:43 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:01:45 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:01:46 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:02:50 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:02:52 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:02:54 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:02:55 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:03:24 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:03:26 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:03:28 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:03:29 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:04:01 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:04:02 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:04:05 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:04:06 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:05:45 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:05:47 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:05:49 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:05:50 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:06:18 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:06:19 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:06:21 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:06:22 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:07:13 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:07:14 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:07:19 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:07:22 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:07:23 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:08:51 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:08:53 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:08:57 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:08:58 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:08:59 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:11:15 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:11:19 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:11:24 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:11:26 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:11:27 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:15:51 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:15:52 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:15:57 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:15:58 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:26:44 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:26:56 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:27:08 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:27:09 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:28:00 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:28:36 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:30:50 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:30:52 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:30:54 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:30:55 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:31:27 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:31:28 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:31:30 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:31:31 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:31:52 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:31:53 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:31:56 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:31:57 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:35:59 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:36:00 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:36:15 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:36:16 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:36:28 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:36:29 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:36:50 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:36:51 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:38:27 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:38:28 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:39:40 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:39:41 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:45:54 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:45:55 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:46:38 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:46:39 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:47:48 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:47:49 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:48:11 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:48:12 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:48:13 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:48:15 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:49:24 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:49:25 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:49:51 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:49:52 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:50:22 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:50:23 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:50:58 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:51:00 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:51:27 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:51:28 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:52:00 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:52:00 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:53:00 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:53:01 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:53:25 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:53:26 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:53:55 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:53:57 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:53:58 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:54:00 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:54:02 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:54:27 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:54:28 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:55:55 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:55:57 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:56:00 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:56:01 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:57:27 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:57:28 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 19:58:14 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:58:16 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 19:58:18 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 19:58:19 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 20:00:12 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:00:13 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:00:15 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 20:00:17 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 20:01:20 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 20:01:20 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 20:03:53 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:03:54 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:03:56 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 20:03:58 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 20:05:39 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:05:40 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:05:46 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 20:05:47 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 20:27:15 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:27:17 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:27:21 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 20:27:22 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 20:28:35 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:28:37 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:28:38 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 20:28:40 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 20:29:41 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 20:29:41 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 20:30:43 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:30:44 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:30:47 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 20:30:48 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 20:36:57 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:36:59 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:37:02 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 20:37:03 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 20:38:25 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:38:27 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:38:33 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 20:38:34 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 20:41:31 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 20:44:34 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:44:37 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:48:24 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:48:26 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 20:48:27 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:50:28 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:50:50 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:51:19 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:53:54 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:54:10 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:54:31 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:55:03 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:55:03 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:56:50 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:56:50 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:59:10 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:59:10 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:59:38 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 20:59:38 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:00:29 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:00:29 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:01:16 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:01:16 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:01:36 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:01:36 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:02:02 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:02:02 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:02:17 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:02:17 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:03:32 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:03:32 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:04:01 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:04:01 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:04:26 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:04:26 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:06:04 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:06:04 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:06:24 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:06:24 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:06:50 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:06:50 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:08:00 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:08:00 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:08:27 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:08:27 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:09:25 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:09:25 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:09:39 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:09:39 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:09:55 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:09:55 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:10:09 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:10:09 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:10:35 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:10:35 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:11:20 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:11:20 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:12:08 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:12:08 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:12:26 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:12:26 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:13:03 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:13:03 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:14:30 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:14:30 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:15:45 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:15:45 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:16:00 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:16:00 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:16:16 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:16:16 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:17:02 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:17:02 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:18:09 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:18:09 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:19:38 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:19:48 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:19:50 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:19:52 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:27:10 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:27:10 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:28:25 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:28:25 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:28:52 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:28:52 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:29:33 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:29:33 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:30:55 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:30:55 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:31:11 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:31:11 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:31:54 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:31:54 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:32:38 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:32:38 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:32:53 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:32:53 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:33:07 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:33:15 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:33:17 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:33:18 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:34:38 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:34:39 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:34:43 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:34:45 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:35:52 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:35:53 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:35:55 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:35:58 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:39:23 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:39:25 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:39:30 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 21:39:31 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 21:40:33 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 18]
+2012-10-09 21:40:34 Debug: Notice (8): Undefined index:  query in [C:\xampp\htdocs\italica\app\controllers\rols_controller.php, line 91]
+2012-10-09 21:40:57 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:41:00 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-09 21:46:44 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:46:46 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 21:48:25 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:49:04 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:49:49 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:50:05 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:51:23 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:52:48 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:53:11 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:53:48 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:54:21 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:54:41 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:55:32 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:56:20 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:57:30 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:58:06 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:58:40 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:59:00 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:59:21 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:59:35 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 21:59:47 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:00:03 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:00:32 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:01:31 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:01:52 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:01:54 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:04:54 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:04:55 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:07:12 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:07:13 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:09:43 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:09:44 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:11:49 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:12:15 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:13:37 Debug: Datos almacenados en la tabla Ingreso, Usuario->super               
+2012-10-09 22:13:37 Debug: Ingreso, Usuario->super               
+2012-10-09 22:13:40 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:13:41 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:13:43 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:14:09 Debug: Datos almacenados en la tabla Ingreso, Usuario->super               
+2012-10-09 22:14:09 Debug: Ingreso, Usuario->super               
+2012-10-09 22:14:15 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:14:16 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-09 22:14:51 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:15:29 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:16:04 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:17:45 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:18:18 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:19:51 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:20:34 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:20:52 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:21:38 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:22:15 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:23:04 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:41:32 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:43:12 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-09 22:43:59 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\productos_controller.php, line 23]
+2012-10-10 10:48:33 Debug: Datos almacenados en la tabla Ingreso, Usuario->super               
+2012-10-10 10:48:33 Debug: Ingreso, Usuario->super               
+2012-10-10 10:48:43 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-10 10:48:45 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-10 10:48:47 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 10:50:09 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 10:54:41 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 10:54:41 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 10:56:22 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 10:56:22 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 10:58:41 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 10:58:41 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 10:59:41 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-10 10:59:43 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-10 10:59:46 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:00:56 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:00:56 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:04:57 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:04:57 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:05:34 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:05:34 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:06:26 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:06:26 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:06:51 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:06:51 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:09:54 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:09:54 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:12:23 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:12:23 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:12:47 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:12:47 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:13:51 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:13:51 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:14:32 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:14:32 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:14:54 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:14:54 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:15:17 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:15:17 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:15:29 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:15:41 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-10 11:15:42 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 158]
+2012-10-10 11:15:44 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:17:14 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:17:14 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:19:17 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:19:17 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:19:47 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:19:47 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:20:31 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:20:31 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:22:57 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:22:57 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:23:48 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:23:48 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:24:35 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:24:35 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:25:42 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:25:42 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:26:48 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:26:48 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:46:33 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:46:33 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:47:42 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:47:42 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:49:04 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:49:04 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:49:35 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:49:35 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:50:03 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:50:03 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:50:41 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:50:41 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:52:31 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:52:31 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:53:03 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:53:03 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:53:20 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:53:20 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:53:54 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:53:54 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:55:06 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 11:55:06 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:00:07 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:00:07 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:03:11 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:03:11 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:03:45 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:03:45 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:04:31 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:04:31 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:05:34 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:05:34 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:06:01 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:06:01 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:06:31 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:06:31 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:06:51 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:06:51 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:07:24 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:07:24 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:09:26 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:09:26 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:09:49 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:09:49 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:33:39 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:33:39 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:34:22 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:34:22 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:34:58 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:34:58 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:36:36 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:36:36 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:37:55 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:37:55 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:41:58 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:41:58 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:42:47 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:42:47 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:45:29 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:45:29 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:45:59 Debug: Notice (8): Undefined index:  opcionId in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]
+2012-10-10 12:45:59 Debug: Notice (8): Undefined property: ComprasController::$Producto in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 23]

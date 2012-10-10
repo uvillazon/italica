@@ -7,9 +7,9 @@ Ext.define("App.Conf.Productos.Vistas.GridProductos",{
     store: Ext.create("App.Conf.Productos.Stores.StoreProductos"),
     loadMask: true,
     width:'100%',
-    minWidth:400,
+    minWidth:150,
     minHeight:400,
-   
+   collapsible:true,
     viewConfig: {
         stripeRows: true,
         enableTextSelection: true

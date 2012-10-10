@@ -7,7 +7,7 @@ Ext.define("App.Conf.Productos.Vistas.PanelProductoGrid", {
     //bodyPadding: '10 10 10',
     border:0,
     
-    width:600,
+    width:'100%',
     
     height:530,
     initComponent: function() {

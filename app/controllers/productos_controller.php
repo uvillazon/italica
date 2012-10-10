@@ -129,13 +129,32 @@ class ProductosController extends AppController {
                             if($i==3){
                                 $this->data['Kardex']['kardex_id']=$this->data['Kardex']['kardex_id_3'];
                             }
-                            $this->data['Kardex']['kardex_saldo_valor']=$this->data['Kardex'][$i]*$this->data['Producto']['producto_precio'];
+                            $this->data['Kardex']['kardex_saldo_valor']=$this->data['Kardex'][$i]*$this->data['Producto']['producto_costo'];
                             $this->data['Kardex']['kardex_saldo_cantidad']=$this->data['Kardex'][$i];
                             $this->data['Kardex']['producto_id']=$id;
-                            $this->data['Kardex']['kardex_tipo_mov']='S';
+                            $this->data['Kardex']['kardex_tipo_mov']='I';
                             $this->data['Kardex']['sucursal_id']=$i;
                             if($this->Kardex->save($this->data)){
-                                $msg='Se guardaron todos los items correctamente';
+                                if($this->data['Kardex']['kardex_id']>0)
+                                    $kardex_id=$this->data['Kardex']['kardex_id'];
+                                else
+                                    $kardex_id=$this->Kardex->getInsertId();
+                                 
+                              
+                                $entrada=$this->data['Kardex']['kardex_saldo_cantidad'];
+                                $salida=0;
+                                $tipo='I';
+                                $tipo_id=$kardex_id;
+                                $costo=$this->data['Producto']['producto_costo'];
+                                $sql="SELECT * FROM public.f_movimientos_insert($kardex_id,'NOW',$entrada,$salida,'$tipo',$tipo_id,$costo,0,0)";
+                                $res= $this->Kardex->query($sql);
+                                if($res){
+                                  $msg='Se guardaron todos los items correctamente';  
+                                }else{
+                                    $msg='Se guardaron todos los items correctamente.Pero no se pudo guardar en la tabla movimientos';
+                                    $this->log("no se pudo almacenar en la tabla movimientos, Productos por->".$datosSesion['Usuario']['login']);
+                                }
+                                
                             }else{
                                 $msg='Se guard&oacute; el producto pero hubo un error al guardar los stock inicial';
                             }

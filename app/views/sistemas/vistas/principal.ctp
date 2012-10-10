@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="/libs/ext41/examples/layout-browser/layout-browser.css">
 <script>
     Ext.Loader.setConfig({enabled: true});
     
@@ -63,9 +62,9 @@
         chart = Ext.create('Ext.chart.Chart', {
             xtype: 'chart',
             title: 'Bienvenido',
-                    iconCls: 'house',
+            iconCls: 'house',
                    
-                    closable: false,
+            closable: false,
             id: 'chartCmp',
             animate: true,
             store: store1,
@@ -109,15 +108,15 @@
         var tabs = Ext.widget('tabpanel', {
             id: 'content-panel',
             region: 'center', // this is what makes this panel into a region
-            // within the containing layout
-            layout: 'fit',
-            margins: '0 0 0 0',
+            
+            layoutOnTabChange: true,
             resizeTabs: true,
-             bodyStyle: "background-image:url('../app/webroot/img/fondoTrans.png')",
-            enableTabScroll: true,
+            bodyStyle: "background-image:url('../app/webroot/img/fondoTrans.png')",
+            //enableTabScroll: true,
             width: '100%',
             height: 250,
             defaults: {
+                //layout: 'fit',
                 autoScroll: true
             },
             items: [chart]
@@ -129,15 +128,15 @@
             if (open==null){
                 tabs.add({
                     id:url,
-                    layout:'fit',
+                  
                     closable: true,
+                    //html : '<iframe name="'+url+'frame" src="'+url+'" frameborder="0" width=100% height="100%" scrolling="no"></iframe>',
                     bodyStyle: "background-image:url('../app/webroot/img/fondoTrans.png')",
-                    //html: '<img src="<?php echo $html->url('/app/webroot', true); ?>/img/fondoTrans.png" width="100%" height="100%">',
                     iconCls: icon,
                     title: titleTab,
                     loader: {
                         url: url,
-                        //autoLoad:true,
+                        autoLoad:true,
                         contentType: 'html',
                         loadMask: true,
                         scripts:true,
@@ -147,7 +146,7 @@
                     },
                     listeners: {
                         activate: function(tab) {
-                            tab.loader.load();
+                            //tab.loader.load();
                         }
                     }
 
@@ -250,8 +249,8 @@
                 {xtype:'label',
                     autoHeight:true,
                     iconCls:'user_suit',
-                    // text:'<div align="right"><b>Usuario: </b><font color="black"><b><?php echo $nombres;?></b></font></div>'
-                    html:'<b>USUARIO: </b><?php echo $nombres;?>'
+                    // text:'<div align="right"><b>Usuario: </b><font color="black"><b><?php echo $nombres; ?></b></font></div>'
+                    html:'<b>USUARIO: </b><?php echo $nombres; ?>'
                 },'->',
                 {
                     text: 'Cerrar sesión',
@@ -271,12 +270,15 @@
         Ext.create('Ext.Viewport', {
             layout: 'border',
             title: 'Sistema',
+            defaults: {
+                split: true
+            },
             //html:'',
             items: [{
                     xtype: 'box',
                     id: 'header',
                     region: 'north',
-                    html: '<h1>ITALICA - <?php echo $sucursal;?></h1>',
+                    html: '<h1>ITALICA - <?php echo $sucursal; ?></h1>',
                     height: 30,
                     items:[
                         {
@@ -298,7 +300,7 @@
                     split:true,
                     collapsible: true,
                     margins: '0 0 0 0',
-                    width: 275,
+                    width: 200,
                     minSize: 100,
                     maxSize: 500,
                     items: [treePanel]

@@ -18,6 +18,7 @@ Ext.define("App.Conf.Productos.Vistas.PanelPrincipalProducto", {
         });
         var panelForm=Ext.create("App.Conf.Productos.Vistas.FormProducto",
         {
+             width:'100%',
             cancelar:function(){
                 panelForm.modoNoEdicion(panelForm);
             },
@@ -27,6 +28,7 @@ Ext.define("App.Conf.Productos.Vistas.PanelPrincipalProducto", {
         });
        
         var panelGrid=Ext.create("App.Conf.Productos.Vistas.PanelProductoGrid",{
+              width:'100%',
             items:[grid]
         });
 
@@ -51,7 +53,17 @@ Ext.define("App.Conf.Productos.Vistas.PanelPrincipalProducto", {
            
             layout: {
                 type: 'table',
-                columns: 2
+                columns: 2,
+                tdAttrs: {
+                    style: {
+                        width:'60%'
+                    }
+                },
+                tableAttrs: {
+                    style: {
+                        width:'98%'
+                    }
+                }
             },
             items:[panelGrid,panelForm]
         }];
@@ -61,8 +73,8 @@ Ext.define("App.Conf.Productos.Vistas.PanelPrincipalProducto", {
             iconCls: 'add',
             hidden:me.quitarPermisoC,
             handler: function(){
-                panelForm.modoEdicion(panelForm);
-               panelForm.limpiarFormulario(panelForm);
+                panelForm.limpiarFormulario(panelForm);
+               panelForm.modoEdicion(panelForm);               
                 grid.getSelectionModel().deselectAll();
             }
         }, '-',{
