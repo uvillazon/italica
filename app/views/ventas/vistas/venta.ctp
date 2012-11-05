@@ -1,3 +1,4 @@
+
 <script>
 
     Ext.Loader.setConfig({enabled: true});
@@ -6,7 +7,7 @@
     Ext.onReady(function() {
         Ext.QuickTips.init();
 
-          var panel = Ext.create("App.Procesos.Venta.Vistas.PanelPrincipalOrden");
+          var panel = Ext.create("App.Procesos.Venta.Vistas.PanelPrincipalVenta");
         panel.render('panelPrincipalVenta');
 
 

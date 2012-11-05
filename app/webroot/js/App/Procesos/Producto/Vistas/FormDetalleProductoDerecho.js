@@ -1,7 +1,7 @@
 Ext.define("App.Procesos.Producto.Vistas.FormDetalleProductoDerecho", {
-    extend: "Ext.form.FieldSet",
+    extend: "Ext.form.Panel",
     alias: "widget.FormDetalleProductoDerecho",
-    id: 'FormDetalleProductoDerecho',
+   bodyPadding: '5 10 10',
     title: '',
     collapsible: false,
     defaults: {
@@ -23,16 +23,13 @@ Ext.define("App.Procesos.Producto.Vistas.FormDetalleProductoDerecho", {
             hideLabel: true,
             value:'<center><h4>IMAGEN DEL ITEM</h4></center>'
         },{
-            xtype:'panel',
-            width:200,          
-            html:'<img src="../app/webroot/img/fotos/unknow.jpg" width=200px height=180px />',
-            height:180
-        },{
-            xtype:'panel',
-            
-            width:200,
-            html:'<img src="../app/webroot/img/fotos/unknow.jpg" width=200px height=180px />',
-            height:180
+            xtype: 'image',
+            rowspan:12,
+            itemId: 'imagen',
+            src: "../app/webroot/img/fotos/unknow.jpg",
+            margin: '0 20 0 0',
+            width : 150,
+            height: 400
         }
         ];
         this.callParent(arguments);

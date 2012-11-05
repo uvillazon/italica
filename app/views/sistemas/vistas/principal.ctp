@@ -108,7 +108,7 @@
         var tabs = Ext.widget('tabpanel', {
             id: 'content-panel',
             region: 'center', // this is what makes this panel into a region
-            
+            layout:'border',
             layoutOnTabChange: true,
             resizeTabs: true,
             bodyStyle: "background-image:url('../app/webroot/img/fondoTrans.png')",
@@ -128,7 +128,7 @@
             if (open==null){
                 tabs.add({
                     id:url,
-                  
+                    layout:'fit',
                     closable: true,
                     //html : '<iframe name="'+url+'frame" src="'+url+'" frameborder="0" width=100% height="100%" scrolling="no"></iframe>',
                     bodyStyle: "background-image:url('../app/webroot/img/fondoTrans.png')",

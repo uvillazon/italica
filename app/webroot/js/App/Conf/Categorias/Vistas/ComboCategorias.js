@@ -16,8 +16,21 @@ Ext.define("App.Conf.Categorias.Vistas.ComboCategorias", {
         var me=this;
        
         me.store.load();
+       
         me.store.on('load',function(){
-            if(me.itemTodos){
+            var todos=true;
+            me.store.each(function(record){
+                //console.log(record.raw['categoria_nombre']);
+                try{
+                    if(record.raw['categoria_nombre']=='TODOS'){
+                        todos=false;
+                    } 
+                }catch(err){
+                    todos=false;
+                }
+               
+            });
+            if(me.itemTodos && todos){
                 me.store.add({
                     categoria_id:0,
                     categoria_nombre:'TODOS',

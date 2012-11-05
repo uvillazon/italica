@@ -1,11 +1,11 @@
 Ext.define("App.Procesos.Traslado.Vistas.PanelInferiorTraslado", {
-    extend: "Ext.form.FieldSet",
+    extend: "Ext.form.Panel",
     alias: "widget.PanelInferiorTraslado",
     title: '',
     vendedor:'',
     sucursal:'',
     border:0,
-    
+    bodyPadding: '5 10 10',
     collapsible: false,
 
     initComponent: function() {

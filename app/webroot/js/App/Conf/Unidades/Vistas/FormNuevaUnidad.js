@@ -31,9 +31,9 @@ Ext.define("App.Conf.Unidades.Vistas.FormNuevaUnidad", {
 
         this.callParent(arguments);
     },   
-    guardar:function(){      
+    guardar:function(formulario){      
       
-        var form = Ext.getCmp("FormNuevaUnidad").getForm();
+        var form =formulario.getForm();
         form.method = 'POST';
         if (form.isValid()) {
             form.submit(
@@ -43,12 +43,12 @@ Ext.define("App.Conf.Unidades.Vistas.FormNuevaUnidad", {
                 url:'../unidads/guardar_unidad',
                 success:function(form, action) {
                    
-                    Ext.getCmp("FormNuevaUnidad").recargarStore(action.result.id);
+                    formulario.recargarStore(action.result.id);
                     Ext.example.msg('Unidad', action.result.msg);                   
-                    Ext.getCmp("FormNuevaUnidad").cancelar();
+                    formulario.cancelar();
                 },
                 failure: function(form, action) {
-                    Ext.getCmp("FormNuevaUnidad").cancelar();
+                    formulario.cancelar();
                     Ext.MessageBox.show({
                         title: 'Error',
                         msg: action.result.msg,

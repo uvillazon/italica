@@ -2,23 +2,13 @@ Ext.define("App.Procesos.Producto.Vistas.GridDetalleProductos",{
     extend      : "Ext.grid.Panel",
     alias: 'widget.GridDetalleProductos',
     //title:'Lista de Articulos',
+    gridSecundario:'',
     autoScroll:true,
     border      : true,
-    multiSelect: true,
-    viewConfig: {
-        plugins: {
-            ptype: 'gridviewdragdrop',
-            dragGroup: 'firstGridDDGroup',
-            dropGroup: 'secondGridDDGroup'
-        },
-        listeners: {
-            drop: function(node, data, dropRec, dropPosition) {
-                var dropOn = dropRec ? ' ' + dropPosition + ' ' + dropRec.get('producto_nombre') : ' on empty view';
-                Ext.example.msg("Drag from right to left", 'Dropped ' + data.records[0].get('producto_nombre') + dropOn);
-            }
-        }
-    },
-    store: Ext.create("App.Conf.Productos.Stores.StoreProductos"),
+    multiSelect: false,
+    ocultarCosto:false,
+    ocultarPrecio:false,
+    store: Ext.create("App.Conf.Productos.Stores.StoreProductos",{autoLoad:true}),
     loadMask: true,
     initComponent   : function() {
         var me = this;     
@@ -48,6 +38,12 @@ Ext.define("App.Procesos.Producto.Vistas.GridDetalleProductos",{
         },{
             header:"Precio",
             dataIndex:"producto_precio",
+            hidden:this.ocultarPrecio,
+            flex:1
+        },{
+            header:"Costo",
+            dataIndex:"producto_costo",
+            hidden:this.ocultarCosto,
             flex:1
         },{
             header:"Cantidad Disponible",
@@ -76,19 +72,18 @@ Ext.define("App.Procesos.Producto.Vistas.GridDetalleProductos",{
         }
         ];
        
-        me.bbar= Ext.create('Ext.PagingToolbar', {
-            store: me.store,
-            displayInfo: true,
-            displayMsg: 'Mostrando {0} - {1} de {2}',
-            emptyMsg: "No existe datos para mostrar"
-        });
-        me.store.loadPage(1);
+        
         me.store.on('beforeload',function(){
            
             mascara.show();
             
 
         });
+        me.on('celldblclick',function(grid,td,cellIndex,record,tr,rowIndex,e,eOpts){
+                //console.log(record.data['producto_codigo_prov']);
+                me.gridSecundario.addRow(me.gridSecundario,record);
+               
+            });
         me.store.on('refresh',function(){
             mascara.hide();
         });
@@ -125,12 +120,18 @@ Ext.define("App.Procesos.Producto.Vistas.GridDetalleProductos",{
           
             mascara.hide();
         });
-        me.getSelectionModel().on('selectionchange', function(selModel, selections,selectedRecord){
-            // me.down('#delete').setDisabled(selections.length === 0);
-            // me.down('#edit').setDisabled(selections.length === 0);
-
-            });
-
+        
+        
+        me.tbar=[{
+            text:'Recargar',
+            itemId:'btnRecargar',
+           tooltip:'Recargar Datos',
+            iconCls:'arrow_refresh',
+            handler:function(){
+                me.store.load();
+            }
+        }];
+      
         me.callParent();
     }
 });

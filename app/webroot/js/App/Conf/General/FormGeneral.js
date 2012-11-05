@@ -14,10 +14,13 @@
     },
     defaultType: 'textfield',
     initComponent: function() {
+        var me=this;
         this.buttons=[{
             text: 'Guardar',
             iconCls: 'disk',
-            handler: this.guardar
+            handler: function(){
+                me.guardar(me);
+            }
         }, '-',{
             text: 'Salir',
             iconCls: 'cross',

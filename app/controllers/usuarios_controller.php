@@ -27,6 +27,7 @@ class UsuariosController extends AppController {
     function getusers() {
        Configure::write('debug', '0');
         //$consulta=$this->Usuario->find('all');
+          $this->layout = 'ajax';
         if($_REQUEST['start']!='')
             $start=$_REQUEST['start'];
         else
@@ -36,7 +37,7 @@ class UsuariosController extends AppController {
         else
             $limit=10000;
 
-        $conquery = "SELECT p.*,r.rol_nombre,u.*,s.sucursal_nombre,s.sucursal_id
+        $conquery = "SELECT p.*,r.rol_nombre,u.*,s.sucursal_nombre,s.sucursal_id, p.persona_apellido1 ||' '|| p.persona_apellido2||' '|| p.persona_nombres as nombre_completo
                     FROM usuarios u
                     INNER JOIN personas p ON p.persona_id=u.persona_id
                     INNER JOIN rols r ON r.rol_id=u.rol_id

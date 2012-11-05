@@ -6,7 +6,7 @@
     Ext.onReady(function() {
         Ext.QuickTips.init();
        var panel = Ext.create("App.Procesos.Compra.Vistas.PanelPrincipalCompra",{
-           
+            vendedor:'<?php echo $nombres;?>',
             minHeight:400,
             quitarPermisoW:<?php echo $permisos["w"]?>,
             quitarPermisoC:<?php echo $permisos["c"]?>,

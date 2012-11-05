@@ -31,9 +31,9 @@ Ext.define("App.Conf.Marcas.Vistas.FormNuevaMarca", {
 
         this.callParent(arguments);
     },   
-    guardar:function(){      
+    guardar:function(formulario){      
       
-        var form = Ext.getCmp("FormNuevaMarca").getForm();
+        var form = formulario.getForm();
         form.method = 'POST';
         if (form.isValid()) {
             form.submit(
@@ -43,12 +43,12 @@ Ext.define("App.Conf.Marcas.Vistas.FormNuevaMarca", {
                 url:'../marcas/guardar_marca',
                 success:function(form, action) {
                    
-                    Ext.getCmp("FormNuevaMarca").recargarStore(action.result.id);
+                    formulario.recargarStore(action.result.id);
                     Ext.example.msg('Marca', action.result.msg);
-                    Ext.getCmp("FormNuevaMarca").cancelar();
+                    formulario.cancelar();
                 },
                 failure: function(form, action) {
-                    Ext.getCmp("FormNuevaMarca").cancelar();
+                    formulario.cancelar();
                     Ext.MessageBox.show({
                         title: 'Error',
                         msg: action.result.msg,
