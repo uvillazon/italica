@@ -45,7 +45,12 @@ class SistemasController extends AppController {
                        $sucursal_ok=false;
                     }
                 }else{
-                     $sucursal_ok=false;
+                    if($user ["Rol"] ["rol_id"]==0 || $user ["Rol"] ["rol_id"]==1){
+                         $sucursal_ok=true;
+                    }else{
+                        $sucursal_ok=false; 
+                    }
+                    
                 }
             }
                    if ($user ["Usuario"] ["password"] == $pass && $sucursal_ok) {
@@ -65,6 +70,7 @@ class SistemasController extends AppController {
                         }
 
                         if ($this->Session->write('Usuario', $user)) {
+                            $this->Session->write('Sucursal',$sucursal_id);
                             $info = array('success' => true);
                             $this->log('Ingreso, Usuario->' . $user['Usuario'] ['login'], LOG_DEBUG);
                         } else {
@@ -129,10 +135,14 @@ class SistemasController extends AppController {
     function principal() {
         Configure::write('debug', '0');
         $datos=$this->tieneSesion();
+        $sucursal_id=  $this->Session->read('Sucursal');
+        $this->loadModel('Sucursal');
+        $sucursal=$this->Sucursal->find(array("Sucursal.sucursal_id" => $sucursal_id));
+        $sucursal_nombre=strtoupper($sucursal['Sucursal']['sucursal_nombre']);
          //echo print_r($datos);exit;
         $nombres=$datos['Persona']['persona_nombres'].' '.$datos['Persona']['persona_apellido1'].' '.$datos['Persona']['persona_apellido2'];
         $this->set('nombres',strtoupper($nombres));
-         $this->set('sucursal',strtoupper($datos['Sucursal']['sucursal_nombre']));
+         $this->set('sucursal',$sucursal_nombre);
         $this->render('vistas/principal');
     }
 

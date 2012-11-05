@@ -72,8 +72,8 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             readOnly:true,
             minLength:3,
             minLengthText:"N\u00famero de caracteres m\u00ednimo es 3",
-            maxLength:6,
-            maxLengthText:"N\u00famero de caracteres m\u00e1ximo es 6",
+            maxLength:12,
+            maxLengthText:"N\u00famero de caracteres m\u00e1ximo es 12",
             allowBlank:false
         },{
             fieldLabel: 'C\u00f3digo Prov.',
@@ -81,9 +81,9 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             itemId:'codigo_prov',
             minLength:3,
             minLengthText:"N\u00famero de caracteres m\u00ednimo es 3",
-            maxLength:6,
+            maxLength:12,
             readOnly:true,
-            maxLengthText:"N\u00famero de caracteres m\u00e1ximo es 6",
+            maxLengthText:"N\u00famero de caracteres m\u00e1ximo es 12",
             allowBlank:false
         },
         {
@@ -156,6 +156,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             xtype:'numberfield',
             itemId:'precio',
             fieldLabel:'Precio',
+            decimalSeparator:'.',
             readOnly:true,
             name:'data[Producto][producto_precio]',
             hideTrigger:true
@@ -165,6 +166,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
             fieldLabel:'Costo',
             minValue:0,
             readOnly:true,
+            decimalSeparator:'.',
             name:'data[Producto][producto_costo]',
             hideTrigger:true
         },{
@@ -218,6 +220,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
                     },{
                         xtype:'numberfield',
                         itemId:'stockinicial1',
+                        value:0,
                         readOnly:true,
                         name:'data[Kardex][1]'
                     },{
@@ -226,6 +229,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
                     },{
                         xtype:'numberfield',
                         itemId:'stockinicial2',
+                        value:0,
                         readOnly:true,
                         name:'data[Kardex][2]'
                     },{
@@ -234,6 +238,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
                     },{
                         xtype:'numberfield',
                         itemId:'stockinicial3',
+                        value:0,
                         readOnly:true,
                         name:'data[Kardex][3]'
                     }
@@ -353,7 +358,7 @@ Ext.define("App.Conf.Productos.Vistas.FormProducto", {
         form.down('#kardex_id_1').setValue('');
         form.down('#kardex_id_2').setValue('');
         form.down('#kardex_id_3').setValue('');
-        form.down('#imagen').setSrc(selection.data['producto_imagen']);
+        form.down('#imagen').setSrc(selection.data['producto_imagen']); 
         form.down('#stockinicial1').setValue(0);
         form.down('#stockinicial2').setValue(0);
         form.down('#stockinicial3').setValue(0);

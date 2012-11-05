@@ -31,9 +31,9 @@ Ext.define("App.Conf.Categorias.Vistas.FormNuevaCategoria", {
 
         this.callParent(arguments);
     },   
-    guardar:function(){      
+    guardar:function(formulario){      
       
-        var form = Ext.getCmp("FormNuevaCategoria").getForm();
+        var form = formulario.getForm();
         form.method = 'POST';
         if (form.isValid()) {
             form.submit(
@@ -43,12 +43,12 @@ Ext.define("App.Conf.Categorias.Vistas.FormNuevaCategoria", {
                 url:'../categorias/guardar_categoria',
                 success:function(form, action) {
                    
-                    Ext.getCmp("FormNuevaCategoria").recargarStore(action.result.id);
+                    formulario.recargarStore(action.result.id);
                     Ext.example.msg('Categoria', action.result.msg);
-                    Ext.getCmp("FormNuevaCategoria").cancelar();
+                    formulario.cancelar();
                 },
                 failure: function(form, action) {
-                    Ext.getCmp("FormNuevaCategoria").cancelar();
+                    formulario.cancelar();
                     Ext.MessageBox.show({
                         title: 'Error',
                         msg: action.result.msg,

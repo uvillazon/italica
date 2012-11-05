@@ -1,14 +1,14 @@
 Ext.define("App.Procesos.Producto.Vistas.FormDetalleProductoIzquierda", {
-    extend: "Ext.form.FieldSet",
+    extend: "Ext.form.Panel",
     alias: "widget.FormDetalleProductoIzquierda",
-    id: 'FormDetalleProductoIzquierda',
+    bodyPadding: '5 10 10',
     title: '',
     vendedor:'',
     sucursal:'',
     collapsible: false,
     defaults: {
         labelWidth: 89,
-        anchor: '100%',
+        anchor: '85%',
         layout: {
             type: 'hbox',
             defaultMargins: {
@@ -20,32 +20,11 @@ Ext.define("App.Procesos.Producto.Vistas.FormDetalleProductoIzquierda", {
         }
     },
     initComponent: function() {
-        var comboMoneda= {
-            width:          40,
-            xtype:          'combo',
-            mode:           'local',
-            value:          '1',
-            triggerAction:  'all',
-            forceSelection: true,
-            editable:       false,
-            name:           'title',
-            displayField:   'name',
-            valueField:     'value',
-            queryMode: 'local',
-            store:          Ext.create('Ext.data.Store', {
-                fields : ['name', 'value'],
-                data   : [
-                {
-                    name : 'Bs',
-                    value: '1'
-                },
-                {
-                    name : 'Dolar',
-                    value: '2'
-                }
-                ]
-            })
-        };
+        var gridUltimosPrecios=Ext.create("App.Procesos.Producto.Vistas.GridUltimosPrecios",{
+            itemId:'gridUltimosPrecios'
+           
+        });
+        var me=this;
         this.items=[
         {
             xtype:'displayfield',
@@ -53,11 +32,13 @@ Ext.define("App.Procesos.Producto.Vistas.FormDetalleProductoIzquierda", {
             value:Ext.Date.format(new Date(),'d/m/Y')
         },{
             xtype:'textfield',
+            itemId:'producto_codigo',
             fieldLabel:'C\u00f3digo Item'
         },
         {
             xtype:'textarea',
             fieldLabel:'Descripci\u00f3n Item',
+            itemId:'producto_nombre',
             rows:2
         },{
             xtype:'fieldcontainer',
@@ -85,17 +66,20 @@ Ext.define("App.Procesos.Producto.Vistas.FormDetalleProductoIzquierda", {
                     xtype:'displayfield',
                     value:'SAN MARTIN'
                 },{
-                    xtype:'textfield'
+                    xtype:'textfield',
+                    itemId:'cantidad_sm'
                 },{
                     xtype:'displayfield',
                     value:'ALCANTARA'
                 },{
-                    xtype:'textfield'
+                    xtype:'textfield',
+                    itemId:'cantidad_a'
                 },{
                     xtype:'displayfield',
                     value:'FALSURI'
                 },{
-                    xtype:'textfield'
+                    xtype:'textfield',
+                    itemId:'cantidad_f'
                 }
 
                 ]
@@ -107,54 +91,94 @@ Ext.define("App.Procesos.Producto.Vistas.FormDetalleProductoIzquierda", {
                 hideLabel: true
             },
             items:[{
-                xtype:'textfield',
+                xtype:'numberfield',
+                itemId:'producto_precio',
+                name:'data[Producto][producto_precio]',
+                decimalSeparator:'.',
+                minValue:0,
+                hideTrigger:true,
                 width:120
             },{
                 xtype:'displayfield',
                 value:'Bs.'
+            },{
+                xtype:'button',
+                iconCls:'disk',
+                tooltip:'Guardar Precio de Venta',
+                itemId:'btnSave',               
+                width:25,
+                handler:function(){
+                    me.GuardarPrecio(me);
+                }
             }
             ]
-        },{
-            xtype:'fieldcontainer',
-            fieldLabel:'Ultimo Precio Lista Proveedor',
-            defaults: {
-                hideLabel: true
-            },
-            items:[{
-                xtype:'textfield',
-                width:100
-            },comboMoneda
-            ]
-        },{
-            xtype:'textfield',
-            fieldLabel:'Fecha Ultimo Precio'
-
-        },{
-            xtype:'fieldcontainer',
-            fieldLabel:'Penultimo Precio Lista Proveedor',
-            defaults: {
-                hideLabel: true
-            },
-            items:[{
-                xtype:'textfield',
-                width:100
-            },comboMoneda
-            ]
-        },{
-            xtype:'textfield',
-            fieldLabel:'Fecha Penultimo Precio'
-
-        },{
-            xtype:'displayfield',
-            fieldLabel:'Vendedor',
-            value:this.vendedor
-        },
+        },gridUltimosPrecios,
         {
-            xtype:'displayfield',
-            fieldLabel:'Sucursal',
-            value:this.sucursal
+            xtype:'hidden',
+            itemId:'producto_id',
+            name:'data[Producto][producto_id]'
         }
         ];
         this.callParent(arguments);
+    },
+    bindingData:function(form,record){
+        
+         form.down('#producto_id').setValue(record.data['producto_id']);
+        form.down('#producto_codigo').setValue(record.data['producto_codigo']);
+        form.down('#producto_nombre').setValue(record.data['producto_nombre']);
+        form.down('#producto_precio').setValue(record.data['producto_precio']);
+        form.down('#cantidad_sm').setValue(record.data['kardex_saldo_cantidad1']);
+        form.down('#cantidad_a').setValue(record.data['kardex_saldo_cantidad2']);
+        form.down('#cantidad_f').setValue(record.data['kardex_saldo_cantidad3']);
+        form.down('#gridUltimosPrecios').store.load({
+            params:{
+                producto_id:record.data['producto_id']
+            }
+        });       
+    },
+    actualizarItems:function(panel){
+        panel.up('FormDetalleProducto').actualizarItems( panel.up('FormDetalleProducto'));
+    },
+    GuardarPrecio:function(formulario){
+        
+        var form= formulario.getForm();
+       
+        form.method = 'POST';
+       
+            if (form.isValid()) {
+
+                form.submit(
+                {
+                    waitTitle:'Espere por favor',
+                    waitMsg: 'Enviando datos...',
+                    url:'../productos/guardar_precio',
+                    success:function(form, action) {
+                        Ext.example.msg('Guardar', action.result.msg);                       
+                     
+                        formulario.actualizarItems(formulario);
+                    // Ext.getCmp('idordenproduccion').setValue(action.result.idordenproduccion);
+                   
+
+                    },
+                    failure: function(form, action) {
+                    
+                        Ext.MessageBox.show({
+                            title: 'Error',
+                            msg: action.result.msg,
+                            buttons: Ext.MessageBox.OK,
+                            // activeItem :0,
+                            animEl: 'mb9',
+                            icon: Ext.MessageBox.ERROR
+                        });
+
+                    }
+                }
+                );
+
+
+            }
+        
+        
+      
     }
 });

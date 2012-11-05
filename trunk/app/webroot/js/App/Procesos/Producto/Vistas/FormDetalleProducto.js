@@ -1,16 +1,18 @@
 Ext.define("App.Procesos.Producto.Vistas.FormDetalleProducto", {
-    extend: "Ext.form.Panel",
+    extend: "Ext.panel.Panel",
     alias: "widget.FormDetalleProducto",
-    layout: 'form',
-    id: 'FormDetalleProducto',
-    frame: false,
-    resizable:false,
+    layout: 'border',    
+    frame: true,
+    resizable:true,
     vendedor:'NOMBRE VENDEDOR',
     sucursal:'NOMBRE SUCURSAL',
     bodyPadding: '5 5 5',
     width:'100%',
     height:530,
+    
     buttonAlign:'left',
+    title:'DETALLE DE PRODUCTO',
+    titleAlign:'center',
     fieldDefaults: {
         msgTarget: 'side',
         labelWidth: 75
@@ -18,33 +20,20 @@ Ext.define("App.Procesos.Producto.Vistas.FormDetalleProducto", {
     defaultType: 'textfield',
     initComponent: function() {
         var panelIzq=Ext.create("App.Procesos.Producto.Vistas.FormDetalleProductoIzquierda",{
+            itemId:'formDatos',
             vendedor:this.vendedor,
-            sucursal:this.sucursal
+            sucursal:this.sucursal,
+            region:'west',
+            width:'60%'
         });
         var panelDer=Ext.create("App.Procesos.Producto.Vistas.FormDetalleProductoDerecho",{
-            height:450
+             itemId:'panelImagen',
+            height:450,
+            region:'east',
+            width:'40%'
         });
         
-        this.items=[{
-            xtype:'panel',
-            id:'main-panel',
-            baseCls:'x-plain',
-            layout: {
-                type: 'table',
-                columns: 2
-            },
-            defaults: {
-                frame:true,
-                width:'100%',
-                height:'100%'
-            },
-            items:[{
-                xtype:'displayfield',
-                hideLabel: true,
-                colspan:2,
-                value:'<center><h4>DETALLE DE PRODUCTO</h4></center>'
-            },panelIzq,panelDer]
-        }];
+        this.items=[panelIzq,panelDer];
 
         this.buttons=[{
             text: 'REPORTE INGRESOS',
@@ -62,6 +51,14 @@ Ext.define("App.Procesos.Producto.Vistas.FormDetalleProducto", {
     },
     egresos:function(){
         Ext.example.msg('REPORTE', 'REPORTE EGRESOS');
+    }
+    ,
+      addRow:function(panel,record){
+       panel.down('#formDatos').bindingData(panel.down('#formDatos'),record);
+         panel.down('#panelImagen').down('#imagen').setSrc(record.data['producto_imagen']);
+    },
+    actualizarItems:function(panel){
+        panel.up('PanelPrincipalProducto').actualizarItems( panel.up('PanelPrincipalProducto'));
     }
 
 });
