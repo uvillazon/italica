@@ -88,9 +88,18 @@ Ext.define("App.Procesos.Traslado.Vistas.PanelSuperiorTraslado", {
         ];
         origen.on('change',function(cmb,newValue,oldValue,eOpts){
             me.grid.store.each(function(record){
-               
-                record.set('sucursal_id', cmb.getValue());
-                record.set('d_traslado_cantidad', 0);
+              
+                record.set('sucursal_origen', cmb.getValue());
+                if(record.data.d_traslado_id==-1)
+                    record.set('d_traslado_cantidad', 0);
+            });
+           
+        });
+        destino.on('change',function(cmb,newValue,oldValue,eOpts){
+            me.grid.store.each(function(record){               
+                record.set('sucursal_destino', cmb.getValue());
+                if(record.data.d_traslado_id==-1)
+                    record.set('d_traslado_cantidad', 0);
             });
            
         });

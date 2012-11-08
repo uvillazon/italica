@@ -59,6 +59,7 @@ Ext.define("App.Procesos.Traslado.Vistas.FormTraslado", {
     ];
         this.callParent(arguments);
     },
+    
     bindingForm:function(data){
         //console.log(data);
         var panelSuperior=Ext.getCmp('panelSuperiorTraslado');

@@ -2,7 +2,8 @@ Ext.define("App.Procesos.Traslado.Modelos.ModeloStoreDetalleTraslados",{
     extend      : "Ext.data.Model",
     fields      : [
         {name:"d_traslado_id",type:"int"},
-        {name:"sucursal_id",type:"int"},
+        {name:"sucursal_origen",type:"int"},
+        {name:"sucursal_destino",type:"int"},
         {name:"traslado_id",type:"int"},
         {name:"traslado_fecha",type:"string"},
         {name:"producto_id",type:"int"},
