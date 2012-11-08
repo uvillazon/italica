@@ -212,6 +212,30 @@ class TrasladosController extends AppController {
         $this->set('info', $info);
         $this->render('respuestas/eliminar_traslado');
     }
+    function eliminar_detalle() {
+        Configure::write('debug', '0');
+        if ($_REQUEST['id']) {
+            $this->loadModel('Detalletraslado');
+            $this->loadModel('Movimiento');
+            $id = $_REQUEST['id'];
+
+            if ($id >= 0) {
+                if ($this->Movimiento->deleteAll(array("Movimiento.movimiento_detalle_id" => $id, "Movimiento.movimiento_tipo" => array("TRASLADOINGRESO","TRASLADOSALIDA")))) {
+                    if ($this->Detalletraslado->delete($id)) {
+                        $info = array('success' => true, 'msg' => 'El registro seleccionado fu&eacute; eliminado correctamente');
+                    } else {
+                        $info = array('success' => false, 'msg' => 'No se pudo eliminar el registro seleccionado');
+                    }
+                } else {
+                    $info = array('success' => false, 'msg' => 'No se pudo eliminar los registros de movimientos');
+                }
+            } else {
+                $info = array('success' => false, 'msg' => 'No se elim&ocute; el registro pq el Identificador ' . $id . ' no existe');
+            }
+        }
+        $this->set('info', $info);
+        $this->render('respuestas/eliminar_detalle');
+    }
 
 }
 

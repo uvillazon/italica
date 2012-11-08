@@ -5846,3 +5846,87 @@
 2012-11-05 18:06:03 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
 2012-11-05 18:06:03 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
 2012-11-05 18:06:04 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-05 19:44:11 Debug: Notice (8): Undefined variable: info in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 440]
+2012-11-05 19:44:39 Debug: Notice (8): Undefined variable: info in [C:\xampp\htdocs\italica\app\controllers\traslados_controller.php, line 236]
+2012-11-05 20:15:52 Debug: Traslado 12 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 20:16:36 Debug: Traslado 13 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 20:30:01 Debug: Traslado 13 almacenada en, Traslados por->super                msg: El registro fu&eacute; modificado correctamente
+2012-11-05 21:05:22 Debug: Traslado 13 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 21:13:18 Debug: Traslado 14 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 21:14:39 Debug: Traslado 14 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 21:18:06 Debug: Notice (8): Undefined variable: datos in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 28]
+2012-11-05 21:18:06 Debug: Notice (8): Undefined variable: datos in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 28]
+2012-11-05 21:22:08 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 21:27:43 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 21:28:10 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 21:28:24 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 21:30:04 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 21:47:09 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 21:51:24 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 21:57:37 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 22:05:02 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 22:20:16 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 22:20:35 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-05 22:24:32 Debug: Traslado 15 almacenada en, Traslados por->super                msg: Se guardaron todos los items correctamente
+2012-11-06 20:16:10 Debug: Datos almacenados en la tabla Ingreso, Usuario->super               
+2012-11-06 20:16:11 Debug: Ingreso, Usuario->super               
+2012-11-06 20:16:50 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-06 20:16:59 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-06 20:17:25 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-06 20:18:09 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:18:10 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:18:10 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:18:10 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:18:12 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:18:12 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:18:26 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:18:27 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:18:27 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:21:45 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:21:46 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:21:46 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:21:47 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:06 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:06 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:07 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:07 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:12 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:12 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:12 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:15 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:15 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:15 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:20 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:21 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:21 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:22:21 Debug: Notice (8): Undefined index:  sucursal_id in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 398]
+2012-11-06 20:24:09 Debug: Notice (8): Undefined index:  actualizar_saldo_mov in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 141]
+2012-11-06 20:24:09 Debug: Notice (8): Undefined index:  actualizar_saldo_mov in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 141]
+2012-11-06 20:24:09 Debug: Notice (8): Undefined index:  actualizar_saldo_mov in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 141]
+2012-11-06 20:24:09 Debug: Venta 45 almacenada en, Ventas por->super                msg: Se guardaron todos los items correctamente
+2012-11-06 20:29:45 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-06 20:29:47 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-06 20:29:52 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-06 20:33:11 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-06 20:33:13 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-06 20:34:19 Debug: Notice (8): Undefined variable: datos in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 28]
+2012-11-06 20:34:19 Debug: Notice (8): Undefined variable: datos in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 28]
+2012-11-07 18:07:38 Debug: Datos almacenados en la tabla Ingreso, Usuario->super               
+2012-11-07 18:07:38 Debug: Ingreso, Usuario->super               
+2012-11-07 18:08:18 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:08:22 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:08:27 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:08:29 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:46:05 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:46:07 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:46:09 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:46:11 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:48:20 Debug: Notice (8): Undefined variable: datos in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 28]
+2012-11-07 18:48:20 Debug: Notice (8): Undefined variable: datos in [C:\xampp\htdocs\italica\app\controllers\compras_controller.php, line 28]
+2012-11-07 18:52:17 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:52:18 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:52:21 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:53:48 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:53:49 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:57:51 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]
+2012-11-07 18:57:53 Debug: Notice (8): Undefined index:  rol_id in [C:\xampp\htdocs\italica\app\controllers\sistemas_controller.php, line 168]

@@ -45,9 +45,9 @@ Ext.define("App.Procesos.Traslado.Vistas.GridTraslado",{
             width:20,
             hidden:true
         },{
-            header:"Sucursal Id",
+            header:"Sucursal Origen",
            
-            dataIndex:"sucursal_id",
+            dataIndex:"sucursal_origen",
             width:20,
             hidden:true,
             editor:{
@@ -56,12 +56,21 @@ Ext.define("App.Procesos.Traslado.Vistas.GridTraslado",{
                 readOnly:true,
                 allowBlank: false,
                 minValue: 0,
-                maxValue: 100000,
-                listeners:{
-                    change:function(field,newValue,oldValue,eOpts){
-                        
-                    }
-                }
+                maxValue: 100000
+            }
+        },{
+            header:"Sucursal Destino",
+           
+            dataIndex:"sucursal_destino",
+            width:20,
+            hidden:true,
+            editor:{
+                xtype: 'numberfield',
+                //id:'sucursalOrigen',
+                readOnly:true,
+                allowBlank: false,
+                minValue: 0,
+                maxValue: 100000
             }
         },{
             header:"Fecha",
@@ -183,11 +192,11 @@ Ext.define("App.Procesos.Traslado.Vistas.GridTraslado",{
         });
         me.on('beforeedit',function(editor,event,eOpts){
             //console.log(event.record.data.sucursal_id);
-            if (event.record.data.sucursal_id == 0) {
+            if (event.record.data.sucursal_origen == 0) {
                 //me.store.rejectChanges();
                 Ext.MessageBox.show({
                     title: 'Error',
-                    msg: 'Seleccione la Sucursal Origen antes de editar este campo.',
+                    msg: 'Seleccione sucursal origen antes de editar este campo.',
                     buttons: Ext.MessageBox.OK,
                     // activeItem :0,
                     animEl: 'mb9',
@@ -248,7 +257,14 @@ Ext.define("App.Procesos.Traslado.Vistas.GridTraslado",{
       
     },
     addRow:function(grid,record){
-        var now=new Date()
+        var now=new Date();
+        var sucursal_id_val;
+        var panelSuperior=grid.up('FormTraslado').down('#panelSuperiorTraslado');
+       if (panelSuperior.down('#comboOrigen').getValue()>0){
+           sucursal_id_val=panelSuperior.down('#comboOrigen').getValue();
+       }else{
+           sucursal_id_val=0;
+       }
         var rec = Ext.create('App.Procesos.Traslado.Modelos.ModeloStoreDetalleTraslados',{
             producto_id:record.data['producto_id'],
             producto_codigo:record.data['producto_codigo'],
@@ -259,6 +275,7 @@ Ext.define("App.Procesos.Traslado.Vistas.GridTraslado",{
             d_traslado_costo:record.data['producto_costo'],
             d_venta_total:0,
             traslado_id:record.data['venta_id'],
+            sucursal_origen:sucursal_id_val,
             unidad_id:record.data['unidad_id'],
             unidad_sigla:record.data['unidad_sigla'],
             movimiento_hora:now.getHours()+":"+now.getMinutes()+":"+now.getSeconds()            
@@ -287,14 +304,14 @@ Ext.define("App.Procesos.Traslado.Vistas.GridTraslado",{
         var selection = grid.getView().getSelectionModel().getSelection()[0];
         
         if (selection) {
-            if (selection.data.d_venta_id>=0){
+            if (selection.data.d_traslado_id>=0){
                 Ext.MessageBox.confirm('Confirmar ', 'Desea eliminar el registro seleccionado ?.\n'+
                     ' El registro se eliminar\u00e1 definitivamente, sin opci\u00f3n a recuperarlo', function(btn){
                         if(btn=='yes'){
                             Ext.Ajax.request({
-                                url: '../ventas/eliminar_detalle',
+                                url: '../traslados/eliminar_detalle',
                                 params: {
-                                    id: selection.data['d_venta_id']
+                                    id: selection.data['d_traslado_id']
 
                                 },
                                 timeout: 3000,
@@ -306,7 +323,7 @@ Ext.define("App.Procesos.Traslado.Vistas.GridTraslado",{
                                             grid.store.remove(selection);
                                             grid.getSelectionModel().select(0);
                                             Ext.example.msg('Eliminar Detalle', info.msg);
-                                            Ext.getCmp('GridVentasRealizadas').store.load();
+                                            Ext.getCmp('GridTrasladosRealizados').store.load();
                                             grid.up('PanelPrincipalVenta').recargarItemsProductos( grid.up('PanelPrincipalVenta'));
                                         }catch(err){
                                             alert(err);
