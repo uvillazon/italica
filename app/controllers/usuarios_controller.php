@@ -36,6 +36,8 @@ class UsuariosController extends AppController {
             $limit=$_REQUEST['limit'];
         else
             $limit=10000;
+        
+        
 
         $conquery = "SELECT p.*,r.rol_nombre,u.*,s.sucursal_nombre,s.sucursal_id, p.persona_apellido1 ||' '|| p.persona_apellido2||' '|| p.persona_nombres as nombre_completo
                     FROM usuarios u

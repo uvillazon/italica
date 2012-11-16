@@ -136,7 +136,7 @@
                     title: titleTab,
                     loader: {
                         url: url,
-                        autoLoad:true,
+                        //autoLoad:true,
                         contentType: 'html',
                         loadMask: true,
                         scripts:true,
@@ -146,7 +146,7 @@
                     },
                     listeners: {
                         activate: function(tab) {
-                            //tab.loader.load();
+                            tab.loader.load();
                         }
                     }
 
