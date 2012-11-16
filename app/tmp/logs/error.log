@@ -7412,3 +7412,9 @@ LINE 6:                     WHERE AND v.cambio_autorizado_por_id &gt;0 ...
 2012-11-15 20:54:15 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;AND&quot;
 LINE 6:                     WHERE AND v.cambio_autorizado_por_id &gt;0 ...
                                   ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-15 22:07:29 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  function public.salida_mov_venta(integer, numeric, timestamp without time zone, character varying, integer, integer) does not exist
+LINE 1: SELECT * FROM public.&quot;salida_mov_venta&quot;( $1 , $2 , $3 , $4 ,...
+                      ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+QUERY:  SELECT * FROM public.&quot;salida_mov_venta&quot;( $1 , $2 , $3 , $4 , $5 , $6 )
+CONTEXT:  PL/pgSQL function &quot;salida_mov_venta&quot; line 43 at SQL statement in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
