@@ -53,6 +53,8 @@
             .nuevo .x-grid-cell{
                 background-color: #F5ECCE !important;
                 /*font-weight:bold;*/
+				
+				/*cambio realizado*/
             }
            
 
