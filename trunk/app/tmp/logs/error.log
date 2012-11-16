@@ -7274,3 +7274,141 @@ LINE 1: SELECT t.suscursal_origen, t.sucursal_destino,to_char(t.tras...
 2012-11-07 15:43:34 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
 2012-11-07 15:43:34 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
 2012-11-07 15:43:34 Warning: Warning (2): session_destroy() [<a href='http://php.net/function.session-destroy'>function.session-destroy</a>]: Session object destruction failed in [C:\xampp\htdocs\italica\cake\libs\cake_session.php, line 458]
+2012-11-09 16:06:34 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:06:57 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:08:41 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:12:11 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:12:48 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:13:38 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:16:03 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:16:32 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:17:27 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:18:19 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:18:49 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:19:01 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:25:10 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                       ORDER BY  ;
+                                        ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:32:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                      ORDER BY  ;
+                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:32:09 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\italica\app\controllers\ventas_controller.php:543) in [C:\xampp\htdocs\italica\cake\libs\controller\controller.php, line 742]
+2012-11-09 16:33:25 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                      ORDER BY  ;
+                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:33:25 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\italica\app\controllers\ventas_controller.php:543) in [C:\xampp\htdocs\italica\cake\libs\controller\controller.php, line 742]
+2012-11-09 16:33:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\italica\app\controllers\ventas_controller.php:543) in [C:\xampp\htdocs\italica\cake\libs\controller\controller.php, line 742]
+2012-11-09 16:35:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                      ORDER BY  ;
+                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:35:56 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                      ORDER BY  ;
+                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-09 16:36:25 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;;&quot;
+LINE 6:                      ORDER BY  ;
+                                       ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-10 12:16:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column p.nombre_producto does not exist
+LINE 5:                     WHERE d.venta_id=46 ORDER BY p.nombre_pr...
+                                                         ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-10 12:16:09 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 562]
+2012-11-10 12:16:10 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column p.nombre_producto does not exist
+LINE 5:                     WHERE d.venta_id=45 ORDER BY p.nombre_pr...
+                                                         ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-10 12:16:10 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 562]
+2012-11-10 15:35:12 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 562]
+2012-11-10 15:35:32 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 562]
+2012-11-12 17:36:35 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...ido1 ASC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 17:37:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...ido1 ASC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 17:38:16 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...ido1 ASC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 17:38:41 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...ido1 ASC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 17:39:25 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...ido1 ASC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 17:39:54 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...ido1 ASC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 17:41:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...do1 DESC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 17:41:45 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...do1 DESC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 17:42:07 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...ido1 ASC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 17:42:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...ido1 ASC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 17:42:43 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...ido1 ASC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 17:43:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 4: ...ido1 ASC, p.persona_apellido2 ASC, p.persona_nombres ASC ) ;
+                                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 18:37:36 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing FROM-clause entry for table &quot;v&quot;
+LINE 5:                     WHERE 0=0  AND (to_char(v.venta_fecha,'d...
+                                                    ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-12 20:42:18 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\clientes_controller.php, line 300]
+2012-11-12 21:02:01 Error: Salida sin sesión abierta
+2012-11-15 17:07:31 Error: Ingreso->Contrasenia incorrecta, Usuario->
+2012-11-15 19:22:31 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;AND&quot;
+LINE 6:                     WHERE AND v.cambio_autorizado_por_id &gt;0 ...
+                                  ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-15 19:23:36 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;AND&quot;
+LINE 6:                     WHERE AND v.cambio_autorizado_por_id &gt;0 ...
+                                  ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-15 19:23:37 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 669]
+2012-11-15 19:29:21 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 669]
+2012-11-15 19:29:55 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 669]
+2012-11-15 19:31:27 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 669]
+2012-11-15 19:32:17 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 669]
+2012-11-15 20:50:15 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 669]
+2012-11-15 20:50:39 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 669]
+2012-11-15 20:50:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;AND&quot;
+LINE 6:                     WHERE AND v.cambio_autorizado_por_id &gt;0 ...
+                                  ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-15 20:50:56 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\italica\app\controllers\ventas_controller.php, line 669]
+2012-11-15 20:51:10 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;AND&quot;
+LINE 6:                     WHERE AND v.cambio_autorizado_por_id &gt;0 ...
+                                  ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-15 20:51:16 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;AND&quot;
+LINE 6:                     WHERE AND v.cambio_autorizado_por_id &gt;0 ...
+                                  ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-15 20:53:24 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;AND&quot;
+LINE 6:                     WHERE AND v.cambio_autorizado_por_id &gt;0 ...
+                                  ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]
+2012-11-15 20:54:15 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;AND&quot;
+LINE 6:                     WHERE AND v.cambio_autorizado_por_id &gt;0 ...
+                                  ^ in [C:\xampp\htdocs\italica\cake\libs\model\datasources\dbo\dbo_postgres.php, line 167]

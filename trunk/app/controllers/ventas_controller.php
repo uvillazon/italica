@@ -178,6 +178,7 @@ class VentasController extends AppController {
         if ($sucursal_id_sesion > 0) {
             if ($datosSesion) {
                 if ($this->data) {
+                    $this->data['Venta']['venta_cambio_fecha'] = date('d-m-Y H:i:s');
                     if ($this->Venta->Save($this->data)) {
                         $id = $this->data['Venta']['venta_id'];
                         $sucursal_id = $this->data['Venta']['sucursal_id'];
@@ -352,6 +353,7 @@ class VentasController extends AppController {
         $this->set('info', $info);
         $this->render('respuestas/eliminar_venta');
     }
+
     function eliminar_cambios() {
         Configure::write('debug', '0');
         if ($_REQUEST['venta_id']) {
@@ -361,13 +363,13 @@ class VentasController extends AppController {
 
             if ($id >= 0) {
 
-                if ($this->Movimiento->deleteAll(array("Movimiento.movimiento_id_tipo" => $id, "Movimiento.movimiento_tipo" => array("CAMBIOINGRESO","CAMBIOSALIDA")))) {
-                    if ($this->Detalleventa->deleteAll(array("Detalleventa.venta_id" => $id,"Detalleventa.d_venta_tipo_cambio" => "CAMBIOSALIDA"))) {
-                       $sql="UPDATE detalleventas SET d_venta_tipo_cambio=NULL WHERE d_venta_tipo_cambio='CAMBIOINGRESO' AND venta_id=$id";
-                       $res = $this->Detalleventa->query($sql);
-                       $this->data['Venta']['venta_id']=$id;
-                       $this->data['Venta']['cambio_autorizado_por']='';
-                       $this->data['Venta']['cambio_autorizado_por_id']='';
+                if ($this->Movimiento->deleteAll(array("Movimiento.movimiento_id_tipo" => $id, "Movimiento.movimiento_tipo" => array("CAMBIOINGRESO", "CAMBIOSALIDA")))) {
+                    if ($this->Detalleventa->deleteAll(array("Detalleventa.venta_id" => $id, "Detalleventa.d_venta_tipo_cambio" => "CAMBIOSALIDA"))) {
+                        $sql = "UPDATE detalleventas SET d_venta_tipo_cambio=NULL WHERE d_venta_tipo_cambio='CAMBIOINGRESO' AND venta_id=$id";
+                        $res = $this->Detalleventa->query($sql);
+                        $this->data['Venta']['venta_id'] = $id;
+                        $this->data['Venta']['cambio_autorizado_por'] = '';
+                        $this->data['Venta']['cambio_autorizado_por_id'] = '';
                         if ($this->Venta->Save($this->data['Venta'])) {
                             $info = array('success' => true, 'msg' => 'Los cambios relacionados a esta venta fueron eliminados');
                             //$sql = "SELECT * FROM public.actualizar_saldo_mov($kardex_id,'$fecha_mov','C')";
@@ -395,12 +397,12 @@ class VentasController extends AppController {
             $this->loadModel('Kardex');
             $producto_id = $_REQUEST['id'];
             $cantidad = $_REQUEST['cantidad'];
-            if($_REQUEST['sucursal_id']>0){
-               $sucursal_id = $_REQUEST['sucursal_id']; 
-            }else{
-              $sucursal_id = $this->Session->read('Sucursal');  
+            if ($_REQUEST['sucursal_id'] > 0) {
+                $sucursal_id = $_REQUEST['sucursal_id'];
+            } else {
+                $sucursal_id = $this->Session->read('Sucursal');
             }
-            
+
             if ($producto_id >= 0) {
                 $kardex = $this->Kardex->find(array("Kardex.producto_id" => $producto_id, "Kardex.sucursal_id" => $sucursal_id));
                 if ($kardex['Kardex']['kardex_saldo_cantidad'] >= $cantidad) {
@@ -439,6 +441,277 @@ class VentasController extends AppController {
         }
         $this->set('info', $info);
         $this->render('respuestas/eliminar_detalle');
+    }
+
+    function reporte_ventas() {
+        Configure::write('debug', '0'); // deshabilitamos el debug de cakephp
+        //$rols = new RolsController();
+        //$datosSesion=$this->tieneSesion();
+        //$this->loadModel('Rol');
+        //$permisos=$rols->verificar_permisos($_REQUEST['opcionId'],$datosSesion['Rol']['rol_id'],$this->Marca);
+        //echo print_r($permisos);
+        //$this->set('permisos',$permisos);
+        $this->render('vistas/reporte_ventas');
+    }
+
+    function ver_reporte_ventas() {
+        Configure::write('debug', '0');
+
+        $fecha_ini = $this->data['Venta']['reporte_fini'];
+        $fecha_fin = $this->data['Venta']['reporte_ffin'];
+        $vendedor = trim($this->data['Venta']['reporte_vendedor']);
+        $opcion_reporte = $this->data['Venta']['reporte_opcion'];
+        $mes = $this->data['Venta']['reporte_mes'];
+
+        if ($opcion_reporte != '') {
+            switch ($opcion_reporte) {
+                case 0://ventas por dia
+                    if ($fecha_ini != '')
+                        $filtro = $filtro . " AND (to_char(v.venta_fecha,'dd-mm-yyyy')='$fecha_ini')";
+                    $tituloTabla = "VENTAS POR DIA ($fecha_ini)";
+                    break;
+                case 1://ventas por semana
+                    if ($fecha_ini != '') {
+
+                        $fecha = strtotime($fecha_ini);
+
+                        $primer_dia = mktime(0, 0, 0, date('m', $fecha), date('d', $fecha), date('Y', $fecha));
+                        $ultimo_dia = mktime(0, 0, 0, date('m', $fecha), date('d', $fecha), date('Y', $fecha));
+
+                        while (date("w", $primer_dia) != 1) {
+                            $primer_dia -= 3600;
+                        }
+                        while (date("w", $ultimo_dia) != 0) {
+                            $ultimo_dia += 3600;
+                        }
+                        $fecha_ini = date("d-m-Y", $primer_dia);
+                        $fecha_fin = date("d-m-Y", $ultimo_dia);
+                        $filtro = $filtro . " AND (to_char(v.venta_fecha,'dd-mm-yyyy') >='$fecha_ini' AND to_char(v.venta_fecha,'dd-mm-yyyy') <='$fecha_fin')";
+                    }
+                    $tituloTabla = "VENTAS POR SEMANA ($fecha_ini al $fecha_fin)";
+                    break;
+                case 2:// ventas por mes
+                    if ($mes != '' && $mes != '') {
+                        $anio = date('Y');
+                        $utimo_dia = strftime("%d", mktime(0, 0, 0, $mes + 1, 0, $anio));
+                        $fecha_ini = "01-$mes-$anio";
+                        $fecha_ini = date('d-m-Y', strtotime($fecha_ini));
+                        $fecha_fin = "$utimo_dia-$mes-$anio";
+                        $fecha_fin = date('d-m-Y', strtotime($fecha_fin));
+                        $filtro = $filtro . " AND (to_char(v.venta_fecha,'dd-mm-yyyy') >='$fecha_ini' AND to_char(v.venta_fecha,'dd-mm-yyyy') <='$fecha_fin')";
+                    }
+                    $meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+                    $mes-=1;
+                    $tituloTabla = "VENTAS POR MES ($meses[$mes])";
+                    break;
+                case 3://ventas por rango de fechas
+                    if ($fecha_ini != '' && $fecha_fin != '')
+                        $filtro = $filtro . " AND (to_char(v.venta_fecha,'dd-mm-yyyy') >='$fecha_ini' AND to_char(v.venta_fecha,'dd-mm-yyyy') <='$fecha_fin')";
+                    $tituloTabla = "VENTAS POR RANGO DE FECHAS ($fecha_ini al $fecha_fin)";
+                    break;
+                case 4://ventas por vendedor
+                    if ($vendedor != '')
+                        $filtro = $filtro . " AND (v.venta_usuario_resp='$vendedor')";
+                    if ($fecha_ini != '' && $fecha_fin != '')
+                        $filtro = $filtro . " AND (to_char(v.venta_fecha,'dd-mm-yyyy') >='$fecha_ini' AND to_char(v.venta_fecha,'dd-mm-yyyy') <='$fecha_fin')";
+                    $tituloTabla = "VENTAS POR VENDEDOR ($vendedor del $fecha_ini al $fecha_fin)";
+                    break;
+                case 5://ventas facturadas
+                    if ($fecha_ini != '' && $fecha_fin != '')
+                        $filtro = $filtro . " AND venta_facturada='true' AND (to_char(v.venta_fecha,'dd-mm-yyyy') >='$fecha_ini' AND to_char(v.venta_fecha,'dd-mm-yyyy') <='$fecha_fin')";
+                    $tituloTabla = "VENTAS FACTURADAS ($fecha_ini al $fecha_fin)";
+                    break;
+                case 6://ventas no facturadas
+                    if ($fecha_ini != '' && $fecha_fin != '')
+                        $filtro = $filtro . " AND venta_facturada='false' AND (to_char(v.venta_fecha,'dd-mm-yyyy') >='$fecha_ini' AND to_char(v.venta_fecha,'dd-mm-yyyy') <='$fecha_fin')";
+                    $tituloTabla = "VENTAS NO FACTURADAS ($fecha_ini al $fecha_fin)";
+                    break;
+            }
+        }
+
+        $conquery = " SELECT *
+                    FROM ventas v
+                    INNER JOIN clientes c ON c.cliente_id=v.cliente_id
+                    LEFT JOIN  personas p ON p.persona_id=c.persona_id
+                    INNER JOIN sucursals s ON s.sucursal_id=v.sucursal_id
+                    WHERE 0=0 $filtro
+                     ORDER BY v.venta_fecha DESC;";
+
+        $consulta1 = $this->Venta->query($conquery);
+        $cadena1 = Set::extract($consulta1, '{n}.0');
+        $info = array('success' => true);
+        $this->Session->write('TituloReporteVentas', $tituloTabla);
+        $this->Session->write('ReporteVentas', $cadena1);
+        //echo print_r($cadena1);
+        $this->set('info', $info);
+        $this->render('respuestas/ver_reporte_ventas');
+    }
+
+    function ventas_pdf() {
+        Configure::write('debug', 0);
+        $datos = $this->Session->read('ReporteVentas');
+        $sucursal_id = $this->Session->read('Sucursal');
+        $titulo = $this->Session->read('TituloReporteVentas');
+        $this->loadModel('Sucursal');
+        $sucursal = $this->Sucursal->find(array("Sucursal.sucursal_id" => $sucursal_id));
+        //echo print_r($datos);
+        $this->layout = 'pdf';
+        $cont = 0;
+        $sumatoria = 0;
+        $contFacturadas = 0;
+        $contNoFacturadas = 0;
+        foreach ($datos as $value) {
+            $venta_id = $value['venta_id'];
+            $conquery = "SELECT p.producto_codigo, p.producto_nombre, u.unidad_sigla,d.d_venta_cantidad
+                    FROM productos p
+                    INNER JOIN unidads u ON u.unidad_id=p.unidad_id
+                    INNER JOIN detalleventas d ON d.producto_id=p.producto_id
+                    WHERE d.venta_id=$venta_id ORDER BY p.producto_nombre";
+
+            $consulta = $this->Venta->query($conquery);
+            $cadena = Set::extract($consulta, '{n}.0');
+            $productos = '';
+            foreach ($cadena as $row) {
+                $productos.='<br>' . $row['producto_nombre'] . ' (' . $row['d_venta_cantidad'] . ' ' . $row['unidad_sigla'] . ')';
+            }
+            if ($value['venta_facturada'])
+                $contFacturadas++;
+            else
+                $contNoFacturadas++;
+            $datos[$cont]['productos'] = $productos;
+            $sumatoria+=$value['venta_precio_total'];
+            $cont++;
+        }
+        $totalVentas = $cont;
+        $cont++;
+        $datos[$cont]['venta_fecha'] = "TOTAL<br>($totalVentas ventas)";
+        $datos[$cont]['venta_precio_total'] = $sumatoria;
+        $datos[$cont]['venta_facturada'] = ' Facturadas: ' . $contFacturadas . '<br> No Facturadas: ' . $contNoFacturadas;
+
+        /* echo "<pre>";
+          echo print_r($datos);
+          echo "</pre>"; */
+        // Operaciones que deseamos realizar y variables que pasaremos a la vista.
+        $this->set('datos', $datos);
+        $this->set('titulo', $titulo);
+        $this->set('sucursal', strtoupper($sucursal['Sucursal']['sucursal_nombre']));
+        $this->render('vistas/ventas_pdf');
+        //$this->render();
+    }
+
+    function reporte_cambios() {
+        Configure::write('debug', '0'); // deshabilitamos el debug de cakephp
+        //$rols = new RolsController();
+        //$datosSesion=$this->tieneSesion();
+        //$this->loadModel('Rol');
+        //$permisos=$rols->verificar_permisos($_REQUEST['opcionId'],$datosSesion['Rol']['rol_id'],$this->Marca);
+        //echo print_r($permisos);
+        //$this->set('permisos',$permisos);
+        $this->render('vistas/reporte_cambios');
+    }
+
+    function ver_reporte_cambios() {
+        Configure::write('debug', '0');
+
+        $fecha_ini = $this->data['Venta']['reporte_fini'];
+        $fecha_fin = $this->data['Venta']['reporte_ffin'];
+        $vendedor = trim($this->data['Venta']['reporte_vendedor']);
+        $opcion_reporte = $this->data['Venta']['reporte_opcion'];
+
+        if ($opcion_reporte != '') {
+            switch ($opcion_reporte) {
+                case 0://historial de cambios por rango de fechas
+                    if ($fecha_ini != '')
+                        $filtro = $filtro . "  AND (to_char(v.venta_cambio_fecha,'dd-mm-yyyy') >='$fecha_ini' AND to_char(v.venta_cambio_fecha,'dd-mm-yyyy') <='$fecha_fin')";
+                    $tituloTabla = "HISTORIAL DE CAMBIOS  ($fecha_ini al $fecha_fin)";
+                    break;
+                case 1://historial de cambios por vendedor
+                    if ($fecha_ini != '') {
+                         $filtro = $filtro . " AND (v.venta_usuario_resp='$vendedor')";
+                        $filtro = $filtro . "  AND (to_char(v.venta_cambio_fecha,'dd-mm-yyyy') >='$fecha_ini' AND to_char(v.venta_cambio_fecha,'dd-mm-yyyy') <='$fecha_fin')";
+                    }
+                    $tituloTabla = "HISTORIAL DE CAMBIOS POR VENDEDOR($fecha_ini al $fecha_fin)";
+                    break;
+            }
+        }
+
+         $conquery = " SELECT *
+                    FROM ventas v
+                    INNER JOIN clientes c ON c.cliente_id=v.cliente_id
+                    LEFT JOIN  personas p ON p.persona_id=c.persona_id
+                    INNER JOIN sucursals s ON s.sucursal_id=v.sucursal_id
+                    WHERE v.cambio_autorizado_por_id >0 $filtro
+                     ORDER BY v.venta_cambio_fecha DESC;";
+
+        $consulta1 = $this->Venta->query($conquery);
+        $cadena1 = Set::extract($consulta1, '{n}.0');
+        $info = array('success' => true);
+        $this->Session->write('TituloReporteCambios', $tituloTabla);
+        $this->Session->write('ReporteCambios', $cadena1);
+        //echo print_r($cadena1);
+        $this->set('info', $info);
+        $this->render('respuestas/ver_reporte_cambios');
+    }
+
+    function cambios_pdf() {
+        Configure::write('debug', 0);
+        $datos = $this->Session->read('ReporteCambios');
+        $sucursal_id = $this->Session->read('Sucursal');
+        $titulo = $this->Session->read('TituloReporteCambios');
+        $this->loadModel('Sucursal');
+        $sucursal = $this->Sucursal->find(array("Sucursal.sucursal_id" => $sucursal_id));
+        //echo print_r($datos);
+        $this->layout = 'pdf';
+        $cont = 0;
+        $sumatoria = 0;
+        $contFacturadas = 0;
+        $contNoFacturadas = 0;
+        foreach ($datos as $value) {
+            $venta_id = $value['venta_id'];
+             $conquery = "SELECT p.producto_codigo, p.producto_nombre, u.unidad_sigla,d.d_venta_cantidad,d.d_venta_tipo_cambio
+                    FROM productos p
+                    INNER JOIN unidads u ON u.unidad_id=p.unidad_id
+                    INNER JOIN detalleventas d ON d.producto_id=p.producto_id
+                    WHERE d.venta_id=$venta_id AND d.d_venta_tipo_cambio IS NOT NULL ORDER BY p.producto_nombre";
+
+            $consulta = $this->Venta->query($conquery);
+            $cadena = Set::extract($consulta, '{n}.0');
+            $productos = '';
+          foreach($cadena as $row){
+                if($row['d_venta_tipo_cambio']=='CAMBIOINGRESO'){
+                  $productosIngreso.='<br>'.$row['producto_nombre'].' ('.$row['d_venta_cantidad'].' '.$row['unidad_sigla'].')' ;  
+                }
+                 if($row['d_venta_tipo_cambio']=='CAMBIOSALIDA'){
+                  $productosSalida.='<br>'.$row['producto_nombre'].' ('.$row['d_venta_cantidad'].' '.$row['unidad_sigla'].')' ;  
+                }
+                
+            }
+            if ($value['venta_facturada'])
+                $contFacturadas++;
+            else
+               $contNoFacturadas++;
+            $datos[$cont]['productosIngreso']=$productosIngreso;
+            $datos[$cont]['productosSalida']=$productosSalida;
+            $sumatoria+=$value['venta_precio_total'];
+            $cont++;
+            
+        }
+        $totalCambios=$cont;
+        $cont++;
+        
+        $datos[$cont]['venta_cambio_fecha']="TOTAL<br>($totalCambios cambios)";
+        $datos[$cont]['venta_precio_total']=$sumatoria;
+        $datos[$cont]['venta_facturada']=' Facturadas: '.$contFacturadas.'<br> No Facturadas: '.$contNoFacturadas;
+
+        /* echo "<pre>";
+          echo print_r($datos);
+          echo "</pre>"; */
+        // Operaciones que deseamos realizar y variables que pasaremos a la vista.
+        $this->set('datos', $datos);
+        $this->set('titulo', $titulo);
+        $this->set('sucursal', strtoupper($sucursal['Sucursal']['sucursal_nombre']));
+        $this->render('vistas/cambios_pdf');
+        //$this->render();
     }
 
 }
